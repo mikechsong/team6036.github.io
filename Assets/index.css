@@ -1,0 +1,191 @@
+.container-fluid{
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+	.navbar{
+		background-color: white;
+		border-bottom: 1px solid #0a8eff;
+	}
+	.nav-logo{
+		padding-top: 21px;
+		/* padding-left: 15px; */
+		width: 40%;
+		height: auto;
+		
+	}
+	.navbar-text{
+		font-family: 'Work Sans', sans-serif;
+		color: #0a8eff;
+		font-weight: 300;
+		font-size: 20px;
+	}
+	.navbar-text:hover{
+		background-color: #fff !important;
+		font-weight: 400;
+		color: #0a8eff;
+	}
+	.icon-bar{
+		color: #0a8eff;
+		background-color: #0a8eff;
+	}
+
+
+    .jumbotron {
+        position: relative;
+        margin-top: 20px;
+        background-color: rgba(0,0,0,0);
+    }
+
+    /* #banner{
+        margin: 0px 0 0 -254px;
+        width: 100%;
+        height: auto;
+    } */
+    .fill {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	overflow: hidden
+	}
+
+	.fill img {
+    	flex-shrink: 0;
+    	min-width: 100%;
+    	min-height: 100%
+	}
+
+
+    .section-title-text{
+        font-family: 'Work Sans', sans-serif;
+        color: #0a8eff;
+        font-weight: 300;
+        font-size: 47px;
+    }
+
+    .subtitle-text{
+        font-family: 'Work Sans', sans-serif;
+        color: #495867;
+        font-weight: 500;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .body-text{
+        font-family: 'Work Sans', sans-serif;
+        color: #495867;
+        font-weight: 300;
+        font-size: 21px;
+    }
+    .body-block{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    
+    #sponsor-button{
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-weight: 300;
+        font-size: 20px; 
+        margin-top: 17.5px !important; 
+        background-color: #0a8eff;
+        border-color: white;
+    }
+
+    #sponsor-button:hover{
+        background-color: white !important;
+        border-color: #0a8eff !important;
+        color: #0a8eff !important;
+    }
+
+    #plus-button-container:hover{
+        border-color: #0a8eff;
+        color: #0a8eff; 
+        background-color: white;
+    }
+
+    #plus-button-container{
+        border-color: white;
+        border-width: 2px;
+        border-style: solid;
+        text-align: center;
+        color: white; 
+        font-size: 100px;
+        background-color: #0a8eff;
+        border-radius: 4px;
+        margin-left: 10px !important;
+    }
+
+    .sponsor-row{
+        margin-top: 25px;
+    }
+
+    #appleLogo, #amLogo, #baeLogo, #qLogo{
+        padding: 5px;
+    }
+    #map {
+        height: 400px;
+        background-color: grey;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+@media(min-width: 992px){
+/*    .body-image{
+        -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    }*/
+
+}
+	/* do css above this */
+	/* this section makes the navbar collapse earlier (and show the three bars). I needed this because the logo is big, and it causes the text to go on the next line */
+@media (max-width: 1107px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    #sponsor-button{
+        display: none;
+    }
+}
+
+
+@media(max-width: 1107px) and (min-width: 768px){
+    .jumbotron{
+        margin-top: 0px;
+    }
+}
