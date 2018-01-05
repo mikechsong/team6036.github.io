@@ -127,11 +127,10 @@
         background-color: grey;
     }
     .fa {
-        padding: 20px;
         font-size: 30px;
-        width: 50px;
         text-align: center;
         text-decoration: none;
+        margin-right: 25px;
     }
 @media(min-width: 992px){
 /*    .body-image{
