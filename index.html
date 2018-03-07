@@ -89,11 +89,11 @@
     <div class="container-fluid">
         <div class="section-title-text">Our Sponsors</div>
         <div class="row sponsor-row">
-            <div class="col-md-6">
-								<img src="Assets/Pictures/qualcomm_logo.png" class="img-responsive" id="qLogo" style="display: block; margin: auto;">
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/nvidia_logo.png" class="img-responsive sponsor-logo" style="display: block;" id="appleLogo">
             </div>
-            <div class="col-md-6">
-                <img src="Assets/Pictures/applied_materials_logo.png" class="img-responsive" id="amLogo">
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/applied_materials_logo.png" class="img-responsive sponsor-logo">
             </div>
         </div>
 				<div class="row sponsor-row">
@@ -105,15 +105,23 @@
 						</div>
 				</div>
         <div class="row sponsor-row">
-            <div class="col-md-6">
-                <img src="Assets/Pictures/bae_logo.png" class="img-responsive" id="baeLogo" style="display: block; margin: auto;">
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/bae_logo.png" class="img-responsive sponsor-logo">
             </div>
-            <div class="col-md-6">
-							<img src="Assets/Pictures/1200px-Nvidia_image_logo.svg.png" class="img-responsive" id="nvidiaLogo">
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/qualcomm_logo.png" class="img-responsive sponsor-logo">
+            </div>
+        </div>
+        <div class="row sponsor-row">
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/google_logo.png" class="img-responsive sponsor-logo" id="google-logo">
+            </div>
+            <div class="col-md-6"> 
+                <img src="Assets/Pictures/kla_tencor_logo.jpg" class="img-responsive sponsor-logo" id="tencor-logo">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 sponsor-row" id="plus-button-container" style="">+<p style="vertical-align: center;">+</p></div>
+            <div class="col-md-6 sponsor-row" id="plus-button-container" style="">+<p style="vertical-align: center;"></p></div>
             <div class="col-md-6 sponsor-row"></div>
         </div>
         <div class="body-text" style="padding-top: 25px;"> We are always looking for sponors. Sponsors give us money. We need money. Please give us money. Please. We really need it. We really really do. For more information, go to our Sponsor us page. This is filler text. Don't worry, it won't make it on the website.</div>
@@ -135,11 +143,8 @@
         }else{
             document.getElementById("leJUMBO").innerHTML = "<img src= \"Assets/Pictures/banner.JPG\" class=\"img-responsive fill\" id=\"banner\">";
         }
-        // for (var i = 0; i < 2; i++){
-        //     document.getElementById("SCLIMG" + i).style.maxHeight = ($("#SCLTEXT" + i).height() + 100) + "px"
-        // }
-        document.getElementById("appleLogo").style.maxHeight = ($("#amLogo").height()) + "px"
         document.getElementById("plus-button-container").style.fontSize = ($("#appleLogo").height() / 1.75) + "px"
+        document.getElementById("tencor-logo").style.height = ($("#google-logo").height() * 1.75) + "px !important"
     }
 
     $(window).resize(function(){

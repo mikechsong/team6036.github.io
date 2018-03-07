@@ -119,7 +119,7 @@
         margin-top: 25px;
     }
 
-    #googleLogo, #nvidiaLogo, #amLogo, #baeLogo, #qLogo, #klaLogo{
+    .sponsor-logo{
         padding: 5px;
     }
     #map {
