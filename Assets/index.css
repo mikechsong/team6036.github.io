@@ -119,7 +119,7 @@
         margin-top: 25px;
     }
 
-    #appleLogo, #amLogo, #baeLogo, #qLogo{
+    .sponsor-logo{
         padding: 5px;
     }
     #map {
