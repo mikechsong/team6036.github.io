@@ -24,16 +24,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link navText active-l" href="#">Home </a>
+            <a class="nav-link navText active-l" onclick="sth()" id='home'>Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navText" href="#">About</a>
+            <a class="nav-link navText" onclick="sta()" id='about'>About</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link navText" href="#">Sponsors</a>
+          <a class="nav-link navText" onclick="sts()" id='spons'>Sponsors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navText" href="#">Contact Us</a>
+          <a class="nav-link navText" onclick="stc()" id='contact'>Contact Us</a>
         </li>
 
       </ul>
@@ -75,7 +75,7 @@
   </div>
 </div>
 <div class="container standardText div-container">
-  <p class="div-title"> About </p>
+  <p class="div-title" id="about_header"> About </p>
     <div class="row row-eq-height about-row">
       <div class="col-md-6 about-text">FRC Team 6036, Peninsula Robotics, was created by a Palo Alto High School alumnus. He created this team when he found that there were an overflowing amount of students at nearby high school teams. Therefore, to alleviate some of this stress, he created this community team with the idea that everyone should have an equal opportunity in STEM and in robotics.</div>
       <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
@@ -96,7 +96,7 @@
 </div>
 <hr>
 <div class="container standardText div-container">
-  <p class="div-title" style="margin-bottom: 40px;"> Sponsors </p>
+  <p class="div-title" style="margin-bottom: 40px;" id="sponsors_header"> Sponsors </p>
   <div class="row row-eq-height">
     <div class="col-md-4"> 
       <img src="pics/logo1.png" class="img-fluid">
@@ -146,7 +146,7 @@
 </div>
 <hr>
 <div class="container div-container">
-  <p class="div-title standardText" style="margin-bottom: 40px;">Contact Us</p>
+  <p class="div-title standardText" style="margin-bottom: 40px;" id="contact_header">Contact Us</p>
           <p class="about-text standardText">The quickest way to reach us is by email. Shoot us an email at team6036@gmail.com. Our lab is located at 941 Colonial Lane, Palo Alto CA, 94303.
             Follow us on <a href="https://www.facebook.com/frc6036" class="fa fa-facebook" target="_blank"> Facebook</a>, <a href="https://twitter.com/frc6036" class="fa fa-twitter" target="_blank">Twitter</a>, and <a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" class="fa fa-youtube" target="_blank">Youtube</a>.</p>
         <div class="row" style="margin-left: 4px;">
@@ -269,6 +269,63 @@
 
 </script>
     <script>
+	var curloadedtag = "home";
+	var sf;
+	
+	function sctota(y){
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			clearInterval(sf);
+		}
+		if(((window.pageYOffset || document.documentElement.scrollTop)+110) - y < -40){
+			window.scrollBy(0,10);
+		}else if(((window.pageYOffset || document.documentElement.scrollTop)+110)- y > 40){
+			window.scrollBy(0,-10);
+		}else{
+			clearInterval(sf);
+		
+		}
+	
+	}
+	function sta(){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("about").className = "nav-link navText active-l";
+		curloadedtag="about";
+		sf = setInterval(function() {sctota(document.getElementById("about_header").offsetTop);},5);
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
+	
+	function sth(){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("home").className = "nav-link navText active-l";
+		curloadedtag="home";
+			sf = setInterval(function() {sctota(105);},5);
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
+	
+	function sts(){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("spons").className = "nav-link navText active-l";
+		curloadedtag="spons";
+				sf = setInterval(function() {sctota(document.getElementById("sponsors_header").offsetTop);},5);
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
+	
+		function stc(){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("contact").className = "nav-link navText active-l";
+		curloadedtag="contact";
+			sf = setInterval(function() {sctota(document.getElementById("contact_header").offsetTop);},5);
+			
+				if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
       function initMap() {
         var uluru = {lat: 37.440560, lng: -122.124352};
         var map = new google.maps.Map(document.getElementById('map'), {
