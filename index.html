@@ -1,148 +1,272 @@
-<html>
-<head>
-	<title>Peninsula Robotics</title>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Bootstrap Links -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-	<!-- Font Link -->
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="Assets/index.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+    <title>Peninsula Robotics</title>
+  </head>
+  <body>
+    <!-- COMMENT -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
+      <a class="navbar-brand" href="#" style="font-size: 40px;">Team 6036</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</head>
-<body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid naver">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
-                    <img src="Assets/Pictures/logo.png" class="nav-logo"></img>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a onclick="" class="navbar-text">Home</a></li>
-                    <li><a class="navbar-text" onclick="">About</a></li>
-                    <li><a class="navbar-text" onclick="">Sponsors</a></li>
-                    <li><a class="navbar-text" onclick="">Contact</a></li>
-                    <button type="button" class="btn btn-primary" id="sponsor-button">Sponsor Us</button>
-                </ul>            
-            </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link navText active-l" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navText" href="#">About</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link navText" href="#">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navText" href="#">Contact Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-primary my-2 my-sm-0 navText" type="submit">Sponsor Us</button>
+      </form>
+    </div>
     </nav>
-    <div class="jumbotron" id="leJUMBO">
-        <img src="Assets/Pictures/banner.jpg" class="img-responsive fill" id="banner">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active" style="height: 100vh; width: 100vw;">
+      <div class="centered standardText" style="">
+        <p class="carHeader"> Peninsula Robotics</p>
+        <p class="carText"> Welcome to our website! </p>
+      </div>
+      <img class="img-fluid" src="pics/carousel1.jpg" alt="First slide" style="">
+      <!--<div id="car1" class="w-100 d-block img-responsive col-lg-12 fill" style=""></div>-->
     </div>
-    <div class="container-fluid">
-            <p class="section-title-text">About</p>
-            
-            <div class="body-block">
-                <p class="subtitle-text">Our Team</p>
-                <div class="row">
-                    <div class="col-md-8">
-                        <p class="body-text"> FRC Team 6036, Peninsula Robotics, was created by a Palo Alto High School alumnus. He created this team when he found that there were an overflowing amount of students at nearby high school teams. Therefore, to alleviate some of this stress, he created this community team with the idea that everyone should have an equal opportunity in STEM and in robotics.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="Assets/Pictures/IMG_4325.jpg" class="img-responsive" style="max-height: 250px; display: block; margin: auto;">
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-item" style="height: 100vh; width: 100vw;">
+      <div class="centered standardText" style="">
+        <p class="carHeader">Our Robot</p>
+        <p class="carText">Our robot can accumulate game cubes and raise them up to 6 feet to score points.</p>
+      </div>
+      <img class="img-fluid" src="pics/carousel2.jpg" alt="Second slide" id="car2">
+    </div>
+    <div class="carousel-item">
+      <div class="centered standardText" style="height: 100vh; width: 100vw;">
+        <p class="carHeader">Regional Competitions</p>
+        <p class="carText">Each year we participate in two regional competitions, San Franciso Regional(SFR) and Sillicon Valley Regional(SVR). We were semifinalists at SFR last year.</p>
+      </div>
+      <img class="img-fluid" src="pics/carousel3.jpg" alt="Third slide" id="car3">
+    </div>
+  </div>
+</div>
+<div class="container standardText div-container">
+  <p class="div-title"> About </p>
+    <div class="row row-eq-height about-row">
+      <div class="col-md-6 about-text">FRC Team 6036, Peninsula Robotics, was created by a Palo Alto High School alumnus. He created this team when he found that there were an overflowing amount of students at nearby high school teams. Therefore, to alleviate some of this stress, he created this community team with the idea that everyone should have an equal opportunity in STEM and in robotics.</div>
+      <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
+    </div>
+    <div class="row row-eq-height about-row">
+      <div class="col-md-6"><img src="pics/goal.jpg" class="img-fluid about-img"></div>
+      <div class="col-md-6 about-text">Some text about our team goal. STEM, Robotics. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    </div>
+    <div class="row row-eq-height about-row">
+      <div class="col-md-6 about-text">This is our 2018 Robot. It uses a pneumatic system to accumulate and eject cubes and an extension lift to elevate them. Here is a video of our robot in action. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="col-md-6"><img src="pics/robot.jpg" class="img-fluid about-img"></div>
+    </div>
+    <div class="row row-eq-height about-row">
+      <div class="col-md-6"><img src="pics/first.jpg" class="img-fluid about-img"></div>
+      <div class="col-md-6 about-text">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games". These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow team members.</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container standardText div-container">
+  <p class="div-title" style="margin-bottom: 40px;"> Sponsors </p>
+  <div class="row row-eq-height">
+    <div class="col-md-4"> 
+      <img src="pics/logo1.png" class="img-fluid">
+    </div>
+    <div class="col-md-4"> 
+      <img src="pics/logo2.png" class="img-fluid">
+    </div>
+    <div class="col-md-4"> 
+      <img src="pics/logo3.png" class="img-fluid">
+    </div>
+ </div>
+  <div class="row row-eq-height">
+     <div class="col-md-4"> 
+      <img src="pics/logo4.jpg" class="img-fluid">
+    </div>
+    <div class="col-md-4"> 
+      <img src="pics/logo5.png" class="img-fluid">
+    </div>
+    <div class="col-md-4"> 
+      <img src="pics/logo6.png" class="img-fluid">
+    </div>
+ </div>
+</div>
+<hr>
+<div class="container standardText div-container">
+  <p class="div-title" style="margin-bottom: 40px;">Why Sponsor Us?</p>
+  <div class="row">
+    <div class="col-md-6 about-text">
+      Some text about why they should sponsor us. I chose this image because it shows how we work out of a garage. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      
+    </div>
+    <div class="col-md-6">
+      <img src="pics/sponsor-us.jpg" class="img-fluid about-img">
+    </div>
 
-            <div class="body-block">    
-                <p class="subtitle-text">FIRST Robotics</p>
-                <div class="row">
-                     <div class="col-md-8">
-                        <p class="body-text">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games". These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow team members. They are designed by FIRST and usually follow a theme. This year's theme was Steamworks, however the season is now over(watch the game description <a href="https://www.youtube.com/watch?v=EMiNmJW7enI" target="_blank">here</a>). Next year's theme is Game On!</p>    
-                        </div>
-                    <div class="col-md-4">
-                        <img src="Assets/Pictures/IMG_7500.jpg" class="img-responsive" style="max-height: 350px; display: block; margin: auto;">
-                    </div>
-                </div>
-            </div>
-            <div class="body-block">
-                <p class="subtitle-text" style="">Team Photo</p> 
-                <img src="Assets/Pictures/IMG_7689.JPG" class="img-responsive" style="margin-top: 15px;">
-            </div>
-            <div class="body-block">
-                <p class="subtitle-text" style="margin-top: 45px;">SkyCrane - Our 2017 Steamworks Robot</p>
-                <div class="row"> 
-                    <p class="body-text col-md-7">We built SkyCrane for the 2016 Steamworks competition. SkyCrane could drive around, collect gears from the driver station and place them on the gear peg. We built it over Build Season, a 6 week slot assigned by FIRST where each team completes their robot. It used a pneumatic system for collecting and placing gears and it used a KOP drive train. Using SkyCrane, we were able to make Alliance Captians in the 2017 Sillicon Valley Regional Competition. Watch more videos <a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" target="_blank">here.</a></p>
-                    <iframe class="col-md-5" width="640" height="300" src="https://www.youtube.com/embed/izr4sUFtMwA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
+  </div>
+  <div class="row" style="margin-top: 25px;">
+    <div class="col-md-6 about-text">
+      Some more text about why they should sponsor us. I chose this image because it shows the struggle. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      
     </div>
-    <div class="container-fluid">
-        <div class="section-title-text">Our Sponsors</div>
-        <div class="row sponsor-row">
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/nvidia_logo.png" class="img-responsive sponsor-logo" style="display: block;" id="appleLogo">
-            </div>
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/applied_materials_logo.png" class="img-responsive sponsor-logo">
-            </div>
-        </div>
-        <div class="row sponsor-row">
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/bae_logo.png" class="img-responsive sponsor-logo">
-            </div>
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/qualcomm_logo.png" class="img-responsive sponsor-logo">
-            </div>
-        </div>
-        <div class="row sponsor-row">
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/google_logo.png" class="img-responsive sponsor-logo" id="google-logo">
-            </div>
-            <div class="col-md-6"> 
-                <img src="Assets/Pictures/kla_tencor_logo.jpg" class="img-responsive sponsor-logo" id="tencor-logo">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 sponsor-row" id="plus-button-container" style="">+<p style="vertical-align: center;"></p></div>
-            <div class="col-md-6 sponsor-row"></div>
-        </div>
-        <div class="body-text" style="padding-top: 25px;"> We are always looking for sponors. Sponsors give us money. We need money. Please give us money. Please. We really need it. We really really do. For more information, go to our Sponsor us page. This is filler text. Don't worry, it won't make it on the website.</div>
+    <div class="col-md-6">
+      <img src="pics/reason2.jpg" class="img-fluid about-img">
     </div>
-    <div class="container-fluid">
-        <p class="section-title-text" style="margin-top: 25px;">Contact Us</p>
-        <p class="body-text">The quickest way to reach us is by email. Shoot us an email at team6036@gmail.com. Our lab is located at 941 Colonial Lane, Palo Alto CA, 94303. <p class="body-text"><a href="https://www.facebook.com/frc6036" class="fa fa-facebook" target="_blank"></a><a href="https://twitter.com/frc6036" class="fa fa-twitter" target="_blank"></a><a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" class="fa fa-youtube" target="_blank"></a></p>
+
+  </div>
+</div>
+<hr>
+<div class="container div-container">
+  <p class="div-title standardText" style="margin-bottom: 40px;">Contact Us</p>
+          <p class="about-text standardText">The quickest way to reach us is by email. Shoot us an email at team6036@gmail.com. Our lab is located at 941 Colonial Lane, Palo Alto CA, 94303.
+            Follow us on <a href="https://www.facebook.com/frc6036" class="fa fa-facebook" target="_blank"> Facebook</a>, <a href="https://twitter.com/frc6036" class="fa fa-twitter" target="_blank">Twitter</a>, and <a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" class="fa fa-youtube" target="_blank">Youtube</a>.</p>
         <div class="row" style="margin-left: 4px;">
             <div class="col-md-6" id="map"></div>
         </div>
-    </div>
+</div>
+
 </body>
 
-<script>
-    function resizer(){
-         if ($(window).width() < 1330){
-            console.log("yo")
-            document.getElementById("leJUMBO").innerHTML = "<img src= \"Assets/Pictures/banner-cropped.JPG\" class=\"img-responsive fill\" id=\"banner\">";
-        }else{
-            document.getElementById("leJUMBO").innerHTML = "<img src= \"Assets/Pictures/banner.JPG\" class=\"img-responsive fill\" id=\"banner\">";
-        }
-        document.getElementById("plus-button-container").style.fontSize = ($("#appleLogo").height() / 1.75) + "px"
-        document.getElementById("tencor-logo").style.height = ($("#google-logo").height() * 1.75) + "px !important"
-    }
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style type="text/css">
+    .standardText{
+      font-family: 'Source Sans Pro', sans-serif;
 
-    $(window).resize(function(){
-        resizer();
-    });
-    resizer();
+    }
+    .navText{
+      font-size: 25px;
+      font-weight: 200;
+    }
+    .active-l{
+      font-weight: 300 !important;
+      color: rgba(255,255,255,1) !important;
+    }
+    .fill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .fill img {
+      flex-shrink: 0;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } 
+    .carHeader{
+      color: white;
+      font-size: 60px;
+      text-align: center;
+    }
+    .carText{
+      color: white;
+      font-size: 30px;
+      font-weight: 300;
+      text-align: center;
+    }
+    .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*    .carousel-item{
+      object-fit: fill !important;
+    }*/
+    .carImage{}
+    #car1{
+      background-image: url('pics/carousel1.jpg');
+          /* Height and width fallback for older browsers. */
+    }
+    .about-img{
+      border-radius: 2%;
+    }
+    .about-text{
+      font-weight: 300;
+      font-size: 22px;
+    }
+    .div-title{
+      font-weight: 300; font-size: 60px; text-align: center; margin-bottom: 20px;
+    }
+    .div-container{
+      padding-top: 25px;
+    }
+    body{
+      background-color: #F9F9F9; 
+    }
+    .about-row{
+      margin-top: 25px;
+    }
+  </style>
+<script type="text/javascript">
+  $(window).resize(function(){
+    var width = window.innerWidth;
+  console.log(width);
+  //document.getElementById('car1').style.width = (width) + "px";
+  //document.getElementById('car1').style.maxHeight = (width / 1.43) + "px";
+  let elements = document.getElementsByClassName("carousel-item")
+  var height = window.innerHeight - $('#navv').height();
+  for (var i = elements.length - 1; i >= 0; i--) {
+    //elements[i].style.height = height + "px";
+  }
+  var height = window.innerHeight - $('#navv').height();
+
+  //document.getElementById('car1').style.height = height + "px";
+});
+  var width = window.innerWidth;
+  console.log(width);
+  //document.getElementById('car1').style.width = (width) + "px";
+  //document.getElementById('car1').style.maxHeight = (width / 1.43) + "px";
+  var height = window.innerHeight - $('#navv').height();
+  //document.getElementById('car1').style.height = height + "px";
+  //document.getElementById('car1').style.maxWidth = (height * 1.43) + "px";
+  //console.log(height);
+  //console.log(window.innerHeight);
+
 </script>
     <script>
       function initMap() {
@@ -159,6 +283,4 @@
     </script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrr5gFE4Hg7zamqY1_oY-nFuBRS9DLXcs&callback=initMap"
   type="text/javascript"></script>
-
-
 </html>

@@ -1,5 +1,0 @@
-* Change Jumbotron image completely and make scaling better
-* Update team photo
-* Fix image scaling in general
-* Add YouTube iFrame whenever Boston uploads video to YouTube(Our Robot In Action)
-* Update Qualcomm's logo on sponsors page
