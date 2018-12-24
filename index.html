@@ -290,6 +290,7 @@
 		document.getElementById(curloadedtag).className = "nav-link navText";
 		document.getElementById("about").className = "nav-link navText active-l";
 		curloadedtag="about";
+			clearInterval(sf);
 		sf = setInterval(function() {sctota(document.getElementById("about_header").offsetTop);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			window.scrollBy(0,-15);
@@ -300,6 +301,7 @@
 		document.getElementById(curloadedtag).className = "nav-link navText";
 		document.getElementById("home").className = "nav-link navText active-l";
 		curloadedtag="home";
+				clearInterval(sf);
 			sf = setInterval(function() {sctota(105);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			window.scrollBy(0,-15);
@@ -310,6 +312,7 @@
 		document.getElementById(curloadedtag).className = "nav-link navText";
 		document.getElementById("spons").className = "nav-link navText active-l";
 		curloadedtag="spons";
+				clearInterval(sf);
 				sf = setInterval(function() {sctota(document.getElementById("sponsors_header").offsetTop);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			window.scrollBy(0,-15);
@@ -320,6 +323,7 @@
 		document.getElementById(curloadedtag).className = "nav-link navText";
 		document.getElementById("contact").className = "nav-link navText active-l";
 		curloadedtag="contact";
+				clearInterval(sf);
 			sf = setInterval(function() {sctota(document.getElementById("contact_header").offsetTop);},5);
 			
 				if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
