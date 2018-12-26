@@ -271,7 +271,37 @@
     <script>
 	var curloadedtag = "home";
 	var sf;
+	window.onscroll = function(){
+		if((window.innerHeight + window.scrollY) >= document.body.scrollHeight-100){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("contact").className = "nav-link navText active-l";
+				curloadedtag="contact";
+				return;
+		
+		}
+		if((window.innerHeight + window.scrollY) >= document.getElementById("sponsors_header").offsetTop){
+				document.getElementById(curloadedtag).className = "nav-link navText";
+			document.getElementById("spons").className = "nav-link navText active-l";
+					curloadedtag="spons";
+					return;
+		}
+				
+			if(((window.innerHeight + window.scrollY) < (document.getElementById("about_header").offsetTop)+document.getElementById("about_header").offsetHeight + 20)){
+				document.getElementById(curloadedtag).className = "nav-link navText";
+			document.getElementById("home").className = "nav-link navText active-l";
+					curloadedtag="home";
+					return;
+		}
 	
+				if((window.innerHeight + window.scrollY) >= document.getElementById("about_header").offsetTop){
+				document.getElementById(curloadedtag).className = "nav-link navText";
+			document.getElementById("about").className = "nav-link navText active-l";
+					curloadedtag="about";
+					return;
+					}
+
+	
+	}
 	function sctota(y){
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			clearInterval(sf);
@@ -287,9 +317,6 @@
 	
 	}
 	function sta(){
-		document.getElementById(curloadedtag).className = "nav-link navText";
-		document.getElementById("about").className = "nav-link navText active-l";
-		curloadedtag="about";
 			clearInterval(sf);
 		sf = setInterval(function() {sctota(document.getElementById("about_header").offsetTop);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -298,9 +325,6 @@
 	}
 	
 	function sth(){
-		document.getElementById(curloadedtag).className = "nav-link navText";
-		document.getElementById("home").className = "nav-link navText active-l";
-		curloadedtag="home";
 				clearInterval(sf);
 			sf = setInterval(function() {sctota(105);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -309,9 +333,6 @@
 	}
 	
 	function sts(){
-		document.getElementById(curloadedtag).className = "nav-link navText";
-		document.getElementById("spons").className = "nav-link navText active-l";
-		curloadedtag="spons";
 				clearInterval(sf);
 				sf = setInterval(function() {sctota(document.getElementById("sponsors_header").offsetTop);},5);
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -320,9 +341,6 @@
 	}
 	
 		function stc(){
-		document.getElementById(curloadedtag).className = "nav-link navText";
-		document.getElementById("contact").className = "nav-link navText active-l";
-		curloadedtag="contact";
 				clearInterval(sf);
 			sf = setInterval(function() {sctota(document.getElementById("contact_header").offsetTop);},5);
 			
