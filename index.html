@@ -64,8 +64,9 @@
         <p class="carText">Our robot can accumulate game cubes and raise them up to 6 feet to score points.</p>
       </div>
       <!--<img class="img-fluid" src="pics/carousel2.jpg" style="object-fit:cover;" alt="Second slide" id="car2">-->
-    <div class="carousel-item">
-      <div class="centered standardText" style="height: 100vh; width: 100vw;background-image:url('pics/carousel3.jpg');background-size:cover;">
+    </div>
+	<div class="carousel-item" style="height: 100vh; width: 100vw;background-image:url('pics/carousel3.jpg');background-size:cover;">
+      <div class="centered standardText" style="">
         <p class="carHeader">Regional Competitions</p>
         <p class="carText">Each year we participate in two regional competitions, San Franciso Regional(SFR) and Sillicon Valley Regional(SVR). We were semifinalists at SFR last year.</p>
       </div>
@@ -275,7 +276,7 @@
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 			clearInterval(sf);
 		}
-		if(((window.pageYOffset || document.documentElement.scrollTop)+110) - y < -40){
+		if(((window.pageYOffset || document.documentElement.scrollTop)+document.getElementById("about_header").offsetHeight + 20) - y < -40){
 			window.scrollBy(0,10);
 		}else if(((window.pageYOffset || document.documentElement.scrollTop)+110)- y > 40){
 			window.scrollBy(0,-10);
