@@ -23,13 +23,16 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link navText active-l" onclick="sth()" id='home'>Home </a>
           </li>
-          <li class="nav-item">
+         <li class="nav-item">
             <a class="nav-link navText" onclick="sta()" id='about'>About</a>
           </li>
-        <li class="nav-item">
+            <li class="nav-item">
+            <a class="nav-link navText active-l" onclick="stro()" id='robot'>Our Robot</a>
+          </li>
+      <li class="nav-item">
           <a class="nav-link navText" onclick="sts()" id='spons'>Sponsors</a>
         </li>
         <li class="nav-item">
@@ -85,15 +88,24 @@
       <div class="col-md-6 about-text">Some text about our team goal. STEM, Robotics. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
     </div>
     <div class="row row-eq-height about-row">
-      <div class="col-md-6 about-text">This is our 2018 Robot. It uses a pneumatic system to accumulate and eject cubes and an extension lift to elevate them. Here is a video of our robot in action. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="col-md-6 about-text">This is our 2018 Robot. It uses a pneumatic system to accumulate and eject cubes and an extension lift to elevate them. Here is a video of our robot in action. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> 
       <div class="col-md-6"><img src="pics/robot.jpg" class="img-fluid about-img"></div>
-    </div>
+</div>
     <div class="row row-eq-height about-row">
       <div class="col-md-6"><img src="pics/first.jpg" class="img-fluid about-img"></div>
       <div class="col-md-6 about-text">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games". These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow team members.</div>
     </div>
   </div>
 </div>
+<hr>
+<div class="container standardText div-container">
+  <p class="div-title" id="robot_header"> Our Robot</p>
+    <div class="row row-eq-height about-row">
+      <div class="col-md-6 about-text">Robot Name : Lifty Boi <br> Season : 2017-2018 (Power Up) <br> Design : We have two normal elevator lifts, one lifting each side of the intake mechanism. There is a CIM connected to a spool that powers each lift, and the spools are connected together by a long piece of hex shafting that mechanically links the two lifts together. This ensures that the lifts go up at the same time. The intake is on a passive pivot so that it starts inside the frame perimeter. We originally were going for a active pivot, but we had to scrap that late in build season. Our electronics panel is mounted to the back of both lifts, offsetting weight and preventing the lift from swaying. 
+</div>
+      <div class="col-md-6"><img src="pics/robot.jpg" class="img-fluid about-img"></div>
+    </div>
+  </div>
 <hr>
 <div class="container standardText div-container">
   <p class="div-title" style="margin-bottom: 40px;" id="sponsors_header"> Sponsors </p>
@@ -286,21 +298,28 @@
 					return;
 		}
 				
-			if(((window.innerHeight + window.scrollY) < (document.getElementById("about_header").offsetTop)+document.getElementById("about_header").offsetHeight + 20)){
+				if(((window.innerHeight + window.scrollY) < (document.getElementById("about_header").offsetTop)+document.getElementById("about_header").offsetHeight + 20)){
 				document.getElementById(curloadedtag).className = "nav-link navText";
 			document.getElementById("home").className = "nav-link navText active-l";
 					curloadedtag="home";
 					return;
 		}
-	
-				if((window.innerHeight + window.scrollY) >= document.getElementById("about_header").offsetTop){
+
+					if((window.innerHeight + window.scrollY) >= document.getElementById("robot_header").offsetTop){
+				document.getElementById(curloadedtag).className = "nav-link navText";
+			document.getElementById("robot").className = "nav-link navText active-l";
+					curloadedtag="robot";
+					return;
+					}
+
+if((window.innerHeight + window.scrollY) >= document.getElementById("about_header").offsetTop){
 				document.getElementById(curloadedtag).className = "nav-link navText";
 			document.getElementById("about").className = "nav-link navText active-l";
 					curloadedtag="about";
 					return;
 					}
 
-	
+
 	}
 	function sctota(y){
 		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
@@ -340,6 +359,14 @@
 		}
 	}
 	
+		function stro(){
+				clearInterval(sf);
+			sf = setInterval(function() {sctota(document.getElementById("robot_header").offsetTop);},5);
+			
+				if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
 		function stc(){
 				clearInterval(sf);
 			sf = setInterval(function() {sctota(document.getElementById("contact_header").offsetTop);},5);
