@@ -25,7 +25,7 @@
               function(err) { console.error("Execute error", err); });
   }
   gapi.load("client:auth2", function() {
-    gapi.auth2.init({client_id: 721616495193-dnga1n0ggro6efodmsephuos1065l0h5.apps.googleusercontent.com 	});
+    gapi.auth2.init({client_id: "721616495193-dnga1n0ggro6efodmsephuos1065l0h5.apps.googleusercontent.com"});
   });
 
 
