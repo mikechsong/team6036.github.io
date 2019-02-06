@@ -4,8 +4,7 @@ xhr.open("GET", "https://photoslibrary.googleapis.com/v1/albums", true);
 xhr.onload = function (e) { 
 if (xhr.readyState === 4) { 
 if (xhr.status === 200) { 
-var respJSON = JSON.parse(xhr.responseText); 
-alert(respJSON.Accounts.length); 
+alert(this.responseText); 
 } else { 
 //console.error(xhr.statusText); 
 //handle error status 
