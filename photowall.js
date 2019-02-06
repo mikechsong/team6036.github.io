@@ -16,6 +16,6 @@ console.error(xhr.statusText);
 }; 
 xhr.setRequestHeader("Authorization", "721616495193-dnga1n0ggro6efodmsephuos1065l0h5.apps.googleusercontent.com")
 xhr.send(null); 
-  
-  
 }
+
+photoloader();
