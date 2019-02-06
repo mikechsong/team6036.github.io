@@ -5,8 +5,9 @@ xhr.onload = function (e) {
 if (xhr.readyState === 4) { 
 if (xhr.status === 200) { 
 alert(this.responseText); 
+  console.log(this.responseText);
 } else { 
-//console.error(xhr.statusText); 
+console.log(this.statusText):
 //handle error status 
 } 
 } 
