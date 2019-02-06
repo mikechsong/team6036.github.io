@@ -16,7 +16,7 @@
   // Make sure the client is loaded and sign-in is complete before calling this method.
   function execute() {
     return gapi.client.photoslibrary.albums.list({
-      "excludeNonAppCreatedData": true
+      "excludeNonAppCreatedData": false
     })
         .then(function(response) {
                 // Handle the results here (response.result has the parsed body).
