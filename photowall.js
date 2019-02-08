@@ -26,6 +26,17 @@
               },
               function(err) { console.error("Execute error", err); });
   }
+
+function listall() {
+    return gapi.client.photoslibrary.albums.list({
+     
+    })
+        .then(function(response) {
+                // Handle the results here (response.result has the parsed body).
+                console.log("Response", response);
+              },
+              function(err) { console.error("Execute error", err); });
+  }
   gapi.load("client:auth2", function() {
     gapi.auth2.init({client_id: "721616495193-dnga1n0ggro6efodmsephuos1065l0h5.apps.googleusercontent.com"});
   });
