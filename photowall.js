@@ -8,14 +8,16 @@
         .then(function() { console.log("Sign-in successful"); },
               function(err) { console.error("Error signing in", err); });
   }
-  function loadClient() {
+  function loadClient() {p
     return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/photoslibrary/v1/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
   }
   // Make sure the client is loaded and sign-in is complete before calling this method.
   function execute() {
-    return gapi.client.photoslibrary.mediaItems.list({
+    return gapi.client.photoslibrary.mediaItems.search({
+	"pageSize":"100",
+	"albumId": "AF1QipMCP6pLdnXa3dxIAsFWJRXE9T0G8teBeX2KU-d4"
      
     })
         .then(function(response) {
