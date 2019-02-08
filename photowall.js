@@ -8,7 +8,7 @@
         .then(function() { console.log("Sign-in successful"); },
               function(err) { console.error("Error signing in", err); });
   }
-  function loadClient() {p
+  function loadClient() {
     return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/photoslibrary/v1/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
