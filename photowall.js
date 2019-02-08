@@ -16,7 +16,7 @@
   // Make sure the client is loaded and sign-in is complete before calling this method.
   function execute() {
     return gapi.client.photoslibrary.mediaItems.search({
-	"pageSize":"100",
+	"pageSize":100,
 	"albumId": "AH27CMpK6NSOSAOe7N5SYjA6ieJkcHVy3ZILlXPWwzkLDlIUzLLlpQt3nx4tKBTOCHj2IJ6W6dQg"
      
     })
