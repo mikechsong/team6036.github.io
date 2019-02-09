@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+    <title>Peninsula Robotics</title>
+  </head>
+  <body>
+    <!-- COMMENT -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
+      <a class="navbar-brand" href="index.html" style="font-size: 40px;">Team 6036</a>
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+            <a class="nav-link navText" href='index.html#home' id='home'>Home </a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link navText active-l" onclick='stsp()' id='sponsoring'>Sponsoring</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link navText" onclick='stsr()' id='sponsres'>Sponsor Resources</a>
+          </li>
+     
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-primary my-2 my-sm-0 navText" onclick="window.location='sponsor.html'" type='button'>Sponsor Us</button>
+      </form>
+    </div>
+    </nav>
+</div>
+  
+<div class="container standardText div-container" style='margin-top:100px;'>
+<p class="div-title" id="sponsoring_header"> Sponsoring </p>
+     <div class="row row-eq-height about-row">
+      <div class="col-md-6 about-text">
+		*Explain we are a non profit &amp mission goal*          
+      </div>
+      <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
+    </div>
+   <div class="row row-eq-height about-row">
+      <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
+      <div class="col-md-6 about-text">
+		*Say what money will go towards*          
+      </div>
+	     <div class="row row-eq-height about-row">
+      <div class="col-md-6 about-text">
+		*Say why we are different*          
+      </div>
+      <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
+    </div>
+
+    </div>
+<hr>
+<div class="container standardText div-container" style='margin-top:100px;'>
+
+  <p class="div-title" id="sponsres_header">Sponsor Resources </p>
+<center><p class='about-text standard-text'><a href='TEAM%206036%20SPONSOR%20INFORMATION%20PACKET.pdf' download>Sponsors Packet</a> - More About Our Team and Sponsoring Us<br><a href='frc6036@gmail.com'>frc6036@gmail.com</a> - Contact Us Here</p></center>	
+</div>
+</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+  <style type="text/css">
+    .standardText{
+      font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    .navText{
+      font-size: 25px;
+      font-weight: 200;
+    }
+    .active-l{
+      font-weight: 300 !important;
+      color: rgba(255,255,255,1) !important;
+    }
+    .fill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .fill img {
+      flex-shrink: 0;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } 
+    .carHeader{
+      color: white;
+      font-size: 60px;
+      text-align: center;
+    }
+    .carText{
+      color: white;
+      font-size: 30px;
+      font-weight: 300;
+      text-align: center;
+    }
+    .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*    .carousel-item{
+      object-fit: fill !important;
+    }*/
+    .carImage{}
+    #car1{
+      background-image: url('pics/carousel1.jpg');
+          /* Height and width fallback for older browsers. */
+    }
+    .about-img{
+      border-radius: 2%;
+    }
+    .about-text{
+      font-weight: 300;
+      font-size: 22px;
+    }
+    .div-title{
+      font-weight: 300; font-size: 60px; text-align: center; margin-bottom: 20px;
+    }
+    .div-container{
+      padding-top: 25px;
+    }
+    body{
+      background-color: #F9F9F9; 
+    }
+    .about-row{
+      margin-top: 25px;
+    }
+  </style>
+     <script>
+	var curloadedtag = "sponsoring";
+	var sf;
+	window.onscroll = function(){
+		if((window.innerHeight + window.scrollY) >= document.body.scrollHeight-100){
+		document.getElementById(curloadedtag).className = "nav-link navText";
+		document.getElementById("sponsres").className = "nav-link navText active-l";
+				curloadedtag="sponsres";
+				return;
+		
+		}
+		if((window.innerHeight + window.scrollY) >= document.getElementById("sponsoring_header").offsetTop){
+				document.getElementById(curloadedtag).className = "nav-link navText";
+			document.getElementById("sponsoring").className = "nav-link navText active-l";
+					curloadedtag="sponsoring";
+					return;
+		}
+
+
+	}
+	function sctota(y){
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			clearInterval(sf);
+		}
+		if(((window.pageYOffset || document.documentElement.scrollTop)+30) - y < -40){
+			window.scrollBy(0,10);
+		}else if(((window.pageYOffset || document.documentElement.scrollTop)+110)- y > 40){
+			window.scrollBy(0,-10);
+		}else{
+			clearInterval(sf);
+		
+		}
+	
+	}
+	function stsp(){
+			clearInterval(sf);
+		sf = setInterval(function() {sctota(document.getElementById("sponsoring_header").offsetTop);},5);
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
+	function stsr(){
+			clearInterval(sf);
+		sf = setInterval(function() {sctota(document.getElementById("sponsres_header").offsetTop);},5);
+		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+			window.scrollBy(0,-15);
+		}
+	}
+
+	
+	
+      function initMap() {
+        var uluru = {lat: 37.440560, lng: -122.124352};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrr5gFE4Hg7zamqY1_oY-nFuBRS9DLXcs&callback=initMap"
+  type="text/javascript"></script>
+</html>

@@ -41,7 +41,7 @@
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-primary my-2 my-sm-0 navText" type="submit">Sponsor Us</button>
+        <button class="btn btn-primary my-2 my-sm-0 navText" onclick="window.location='sponsor.html'" type='button'>Sponsor Us</button>
       </form>
     </div>
     </nav>
@@ -259,34 +259,7 @@
       margin-top: 25px;
     }
   </style>
-<script type="text/javascript">
- $(window).resize(function(){
-    var width = window.innerWidth;
-  console.log(width);
-  //document.getElementById('car1').style.width = (width) + "px";
-  //document.getElementById('car1').style.maxHeight = (width / 1.43) + "px";
-  let elements = document.getElementsByClassName("carousel-item")
-  var height = window.innerHeight - $('#navv').height();
-  for (var i = elements.length - 1; i >= 0; i--) {
-    //elements[i].style.height = height + "px";
-  }
-  var height = window.innerHeight - $('#navv').height();
-
-  //document.getElementById('car1').style.height = height + "px";
-});
-  var width = window.innerWidth;
-  console.log(width);
-  //document.getElementById('car1').style.width = (width) + "px";
-  //document.getElementById('car1').style.maxHeight = (width / 1.43) + "px";
-  var height = window.innerHeight - $('#navv').height();
-  //document.getElementById('car1').style.height = height + "px";
-  //document.getElementById('car1').style.maxWidth = (height * 1.43) + "px";
-  //console.log(height);
-  //console.log(window.innerHeight);
-
-</script>
-<script src='/photowall.js'></script>
-    <script>
+     <script>
 	var curloadedtag = "home";
 	var sf;
 	window.onscroll = function(){
