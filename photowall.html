@@ -2,12 +2,13 @@
 <title>Team 6036 Photowall</title>
 <style>
 *{margin:0px;padding:0px;}
-
+ .cen{width:150px;overflow:visible;margin: 0px 25px;}
 .photopocket {position:absolute;width:150px;z-index:1;border:0.05em solid black;height:150px;background-size:cover;}
-.hoverer:hover+.photopocket {width:200px;height:200px;z-index:5;margin-left:-30px;margin-top:-25px;}
-#photowall {margin-left:-35px;margin-top:35px;}
-.hoverer {z-index:13;margin:-130px;top:20px;width:150px;left:140px;height:150px;position:relative;}
-td {margin-top:20px;width:200px;height:200px;position:relative;}
+.hoverer:hover+.photopocket {width:200px;height:200px;position:relative;z-index:5;left:-30px;top:25px;}
+.hoverer:hover{top:65px}
+#photowall {margin-top:35px;margin-right:-10px;}
+.hoverer {z-index:13;margin:-130px;top:20px;width:150px;left:130px;height:150px;position:relative;}
+td {margin-top:20px;width:210px;height:210px;position:relative;}
 </style>
 <body>
 <center>
@@ -17,18 +18,30 @@ td {margin-top:20px;width:200px;height:200px;position:relative;}
 window.onload = loadwall;
 window.onresize = loadwall;
 function loadwall(){
+
 var q = "";
 var width = window.innerWidth;
+var margin = ((width-600)-(parseInt(width/200)*150))/parseInt((width/200))
 document.getElementById("photowall").innerHTML = "<tr>"+("<th></th>".repeat(width/200))+"</tr>";
 for (i = 0; i < 128; i++) {
   	//var i = 101;
+		
 	if(i%(parseInt(width/200)) == 0 && i!=0){
 		q +="</tr>";
 		document.getElementById("photowall").innerHTML += q;
 		q = "<tr>";
 	}
+	
+	if(i%(parseInt(width/200)) == 0){
+	
+	q+= "<td style='padding-right:"+margin+"px'><div class='cen'><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+i+".jpg\')\"></div></div></td>";
+	}else if(i%(parseInt(width/200)) == (parseInt(width/200)-2) || i%(parseInt(width/200)) == (parseInt(width/200)-1)){
+	
+	q+= "<td><div class='cen'><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+i+".jpg\')\"></div><div></td>";
+	}else{
 
-	q+= "<td><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+i+".jpg\')\"></div></td>";
+	q+= "<td style='padding-left:"+margin+"px'><div class='cen'><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+i+".jpg\')\"></div></div></td>";
+}
 }
 }
 </script>
