@@ -2,13 +2,26 @@
 <title>Team 6036 Photowall</title>
 <style>
 *{margin:0px;padding:0px;}
- .cen{width:150px;overflow:visible;margin: 0px 25px;}
-.photopocket {position:absolute;width:150px;z-index:1;border:0.05em solid black;height:150px;background-size:cover;}
-.hoverer:hover+.photopocket {width:200px;height:200px;position:relative;z-index:5;left:-30px;top:25px;}
-.hoverer:hover{top:65px}
-#photowall {margin-top:35px;margin-right:-10px;}
-.hoverer {z-index:13;margin:-130px;top:20px;width:150px;left:130px;height:150px;position:relative;}
-td {margin-top:20px;width:210px;height:210px;position:relative;}
+ .cen{width:190px;height:190px;overflow:visible;margin: 0px 10px;}
+.photopocket {-webkit-filter:saturate(300%);-webkit-filter:blur(1px);position:absolute;width:190px;z-index:1;height:190px;background-size:cover;}
+
+.hoverer:hover+.photopocket {animation-name:fadein;animation-timing-funtion:ease-out;animation-duration:0.4s;animation-fill-mode:both;} 
+#photowall {margin-top:20px;margin-left:0px;}
+.hoverer {z-index:13;margin:-130px;top:60px;width:190px;left:130px;height:190px;position:relative;}
+td {margin-top:20px;width:200px;height:210px;position:relative;}
+body{background-color:#fafafa;}
+@keyframes fadein{
+0% {-webkit-filter:saturate(2);-webkit-filter:blur(1px);width:190px;height:190px;position:relative;}
+/*
+  20% {width:191px;height:191px;left:-1px;top:-1px;position:relative;}
+  40% {width:192px;height:192px;left:-2px;top:-2px;position:relative;}
+  60% {width:193px;height:193px;left:-3px;top:-3px;position:relative;}
+ 80% {width:194px;height:194px;left:-4px;top:-4px;position:relative;}
+*/ 
+	100% {-webkit-filter:saturate(2);-webkit-filter:blur(0px);width:200px;height:200px;left:-5px;top:-5px;position:relative;}
+}
+
+tr{}
 </style>
 <body>
 <center>
@@ -21,7 +34,7 @@ function loadwall(){
 
 var q = "";
 var width = window.innerWidth;
-var margin = ((width-600)-(parseInt(width/200)*150))/parseInt((width/200))
+var margin = ((width-600)-(parseInt(width/200)*200))/parseInt((width/200))
 document.getElementById("photowall").innerHTML = "<tr>"+("<th></th>".repeat(width/200))+"</tr>";
 for (i = 0; i < 128; i++) {
   	//var i = 101;
