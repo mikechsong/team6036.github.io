@@ -8,14 +8,19 @@
 td {margin:20px;width:200px;height:200px;position:relative;}
 </style>
 <body>
-<table id="photowall"><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></table>
+<center>
+<table id="photowall"></table>
+</center>
 <script>
 window.onload = loadwall;
+window.onresize = loadwall;
 function loadwall(){
 var q = "";
+var width = window.innerWidth;
+document.getElementById("photowall").innerHTML = "<tr>"+("<th></th>".repeat(width/200))+"</tr>";
 for (i = 0; i < 128; i++) {
   	//var i = 101;
-	if(i%8 == 0 && i!=0){
+	if(i%(parseInt(width/200)) == 0 && i!=0){
 		q +="</tr>";
 		document.getElementById("photowall").innerHTML += q;
 		q = "<tr>";
@@ -23,9 +28,6 @@ for (i = 0; i < 128; i++) {
 
 	q+= "<td><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+i+".jpg\')\"></div></td>";
 }
-
-
-
 }
 </script>
 </body>
