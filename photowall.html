@@ -30,6 +30,8 @@ tr{}
 <script>
 window.onload = loadwall;
 window.onresize = loadwall;
+var num = 128;
+photos =shuffleArray(num);
 function shuffleArray(size) {
 	var arr = [];
 	for(var i = 0;i<size;i++){
@@ -49,10 +51,9 @@ function loadwall(){
 var q = "";
 var width = window.innerWidth;
 
-var margin = ((width-600)-(parseInt(width/200)*200))/parseInt((width/200))
-photos =shuffleArray(128);
+var margin = ((width-600)-(parseInt(width/200)*200))/parseInt((width/200));
 document.getElementById("photowall").innerHTML = "<tr>"+("<th></th>".repeat(width/200))+"</tr>";
-for (i = 0; i < 128; i++) {
+for (i = 0; i < num; i++) {
   	//var i = 101;
 		
 	if(i%(parseInt(width/200)) == 0 && i!=0){
