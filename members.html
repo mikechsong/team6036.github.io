@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <title>Team Members</title>
 <body>
-<div id='members'>
+<style>
+.infobox {padding:20px;margin:5px;text-align:center;background-color:#343a40;border-radius:15px;}
+.infobox p {color:#fff;font-family:"Verdana", monospace;}
+.photo {width:200px;height:200px;background-size:cover;border-radius:20px;border:1px solid #222;}
+.member {width:250px;min-height:250px;background-color:transparent;border-radius:30px;border:1px solid;border-color: #8e8e8e transparent;padding:30px;overflow:auto;}
+</style>
+<table id='members'>
 
-</div>
+</table>
 </body>
 <script>
 var locdirectory = "source/teammembers/";
-window.onload = readTextFile(locdirectory+"member_0.json");
-function readTextFile(file)
+margin = 0;
+var loaded = 0;
+members= [];
+var globalamount = 0;
+
+var width = 0;
+
+var q = "";
+function loadMembers(amount){
+width = window.innerWidth;
+globalamount = amount;
+
+margin = ((width-100)-(parseInt(width/250)*250))/parseInt((width/250));
+for(var i = 0; i < amount; i++){
+	readFile(i);
+}
+}
+
+function loadData(amount){
+var counter = 0;
+for(var i = 0; i<amount;i++){
+	if(counter%(parseInt(width/250))==0 && i!=0){
+		document.getElementById("members").innerHTML += q;
+		q = "<tr>";
+	}
+	
+	
+
+	if(members[i] == null){
+	}else{
+	
+	if(counter%(parseInt(width/250)) == parseInt(width/250)-1){
+		q +=insertData(members[i],i) + "</tr>";
+	}else{
+		q += insertData(members[i],i);
+	}	
+	counter++;	
+}	
+}
+document.getElementById("members").innerHTML += q;
+
+}
+
+function readFile(file)
 {
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file);
+    rawFile.open("GET", locdirectory+"member_"+file+".json");
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)
@@ -19,16 +67,38 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                insertData(JSON.parse(allText));
-            }
-        }
-    }
+		members[file] = JSON.parse(allText);       
+        	loaded+=1;
+		if(loaded==globalamount){
+			loadData(globalamount);
+		}
+	    }else{
+		members[file] = null;	
+        	loaded+=1;
+		if(loaded==globalamount){
+			loadData(globalamount);
+		}
+	}
+    }else{	
+	}};
     rawFile.send(null);
+	
 }
-
-function insertData(nix){
-	document.getElementById("members").innerHTML += "<div><p class='name'> Name: "+nix.name+"</p></div>";
-
+    window.onerror = function(message, url, lineNumber) {  
+         
+        return true; 
+    };
+function insertData(nix,userid){
+	switch(nix.team){
+		case "Software":
+			var tclass =  "S";
+			break;
+		default:
+			var tclass= "*";
+			break;
+	}
+	return "<td><div class='member'><center><div class='photo' style='background-image:url(\"source/teammembers/member_"+userid+".jpg\");'></div><div class='infobox'><p class='name'>"+nix.name+"</p><p class='bio'>"+nix.bio+"</p><p class='class'>CLASS : <b>"+tclass+"</b></p></div></center></div></td>";
+	
 }
 
 </script>
