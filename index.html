@@ -11,15 +11,22 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="jquery.ui.dialog.min.css" rel="stylesheet" type="text/css">
+    <link href="jquery.ui.resizable.min.css" rel="stylesheet" type="text/css">
     <title>Peninsula Robotics</title>
+  <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+  <script src="jquery.ui-1.10.4.dialog.min.js"></script>
   </head>
   <body>
     <!-- COMMENT -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
       <a class="navbar-brand" href="#" style="font-size: 40px;">Team 6036</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div id="Dialog1">Content for New Dialog Goes Here</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -51,6 +58,7 @@
       </form>
     </div>
     </nav>
+  <div id="Dialog2">Content for New Dialog Goes Here</div>
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -96,7 +104,7 @@
       <div class="col-md-6"><img src="pics/goal.jpg" class="img-fluid about-img"></div>
       <div class="col-md-6 about-text">
           Our main goal as a team is to enrich the educational experience of our community by providing local high school students with the opportunity to gain hands-on technical experience in engineering and software. As an independent student-run organization, unaffiliated with any school, we bridge between a variety of like-minded students from different backgrounds in a creative and intellectually stimulating setting. 
-          </div>
+      </div>
     </div>
     <div class="row row-eq-height about-row">
       <div class="col-md-6 about-text">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games". These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow team members.</div>
@@ -176,7 +184,14 @@
             <div class="col-md-6" id="map"></div>
         </div>
 </div>
-
+<script type="text/javascript">
+$(function() {
+	$( "#Dialog1" ).dialog(); 
+});
+$(function() {
+	$( "#Dialog2" ).dialog(); 
+});
+</script>
 </body>
 
     <!-- Optional JavaScript -->
