@@ -6,8 +6,8 @@ function nav(inputURL) {
             for (x in data) {
                 output += "<li class=\"nav-item\">\n";
                 output += "<a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name
-                console.log(window.location.protocol+window.location.host+window.location.pathname);
-                if(data[x].link===window.location.protocol+window.location.host+window.location.pathname){
+                console.log(window.location.href);
+                if("https://"+data[x].link===window.location.protocol+window.location.host+window.location.pathname){
                     output+="<span class=\"sr-only\">(current)</span>"
                 }
                 output+="</a>";
