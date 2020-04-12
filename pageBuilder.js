@@ -15,4 +15,4 @@ function nav(inputURL) {
             document.getElementById("nav").innerHTML=output;
         });
 }
-document.getElementById("nav").innerHTML = nav("https://team6036.github.io/nav.json");
+nav("https://team6036.github.io/nav.json");
