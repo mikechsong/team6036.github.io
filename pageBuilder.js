@@ -7,7 +7,7 @@ function nav(inputURL) {
                 output += "<li class=\"nav-item\">\n";
                 output += "<a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name
                 console.log(window.location.href);
-                if("https://"+data[x].link===window.location.protocol+window.location.host+window.location.pathname){
+                if("https://"+data[x].link===window.location.href){
                     output+="<span class=\"sr-only\">(current)</span>"
                 }
                 output+="</a>";
