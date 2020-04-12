@@ -1,377 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
 
+    <title>Hello, world!</title>
+</head>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet">
-    <title>Peninsula Robotics</title>
-  </head>
-  <body>
-    <!-- COMMENT -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
-      <a class="navbar-brand" href="#" style="font-size: 40px;">Team 6036</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-           <li class="nav-item">
-            <a class="nav-link navText active-l" onclick="sth()" id='home'>Home </a>
-          </li>
-         <li class="nav-item">
-            <a class="nav-link navText" onclick="sta()" id='about'>About</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link navText" onclick="stro()" id='robot'>Our Robot</a>
-          </li>
-      <li class="nav-item">
-          <a class="nav-link navText" onclick="sts()" id='spons'>Sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navText" onclick="stc()" id='contact'>Contact Us</a>
-        </li>
-
-      </ul>
-		  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="form-inline my-2 my-lg-0">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="G2KY363UPSL28">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safe, easy way to donate to Team 6036 Peninsula Robotics! Palo Alto Youth Robotics, 501c3">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-primary my-2 my-sm-0 navText" onclick="window.location='sponsor.html'" type='button'>Sponsor Us</button>
-      </form>
-    </div>
-    </nav>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="" data-pause="false" data-interval="10000">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active" style="height: 100vh; width: 100vw;background-image:url('pics/carousel1-new.jpg');background-size:cover;">
-      <div class="centered standardText" style="">
-        <p class="carHeader"> Peninsula Robotics - FRC Team 6036</p>
-        <p class="carText"> Welcome to our website! </p>
-      </div>
-     <!-- <img class="img-fluid" src="pics/carousel1.jpg" alt="First slide" style="object-fit:cover;"> -->
-      <!--<div id="car1" class="w-100 d-block img-responsive col-lg-12 fill" style=""></div>-->
-    </div>
-    <div class="carousel-item" style="height: 100vh; width: 100vw;background-image:url('pics/carousel2-new.jpg');background-size:cover;">
-      <div class="centered standardText" style="">
-        <p class="carHeader">Our Robot</p>
-        <p class="carText">Our robot, Baby Dino, can accumulate and deposit cargo and hatches. She can also climb to the second level of the platform.</p>
-      </div>
-      <!--<img class="img-fluid" src="pics/carousel2.jpg" style="object-fit:cover;" alt="Second slide" id="car2">-->
-    </div>
-	<div class="carousel-item" style="height: 100vh; width: 100vw;background-image:url('pics/carousel3-new.jpg');background-size:cover;">
-      <div class="centered standardText" style="">
-        <p class="carHeader">Competitions</p>
-        <p class="carText">Each year we participate in two regional competitions, San Franciso Regional(SFR) and Sillicon Valley Regional(SVR). Last season, we attended the World Championship in Houston.</p>
-      </div>
-      <!--<img class="img-fluid" src="pics/carousel3.jpg"style="object-fit:cover;"  alt="Third slide" id="car3">-->
-    </div>
-  </div>
-</div>
-<div class="container standardText div-container">
-  <p class="div-title" id="about_header"> About Us</p>
-    <div class="row row-eq-height about-row">
-      <div class="col-md-6 about-text">
-          Peninsula Robotics, FRC Team 6036, is a student-led community robotics team based in Palo Alto. Created by a Palo Alto High School student in 2016 to answer the rising interest in STEM among local students, Peninsula Robotics is active to this day and continues to serve its community by providing high school students with hands-on learning experiences that allow them to apply theoretical knowledge in a creative environment of like-minded students to produce functional, competitive robots.
-
-      </div>
-      <div class="col-md-6"><img src="pics/founding.jpg" class="img-fluid about-img"></div>
-    </div>
-    <div class="row row-eq-height about-row">
-      <div class="col-md-6"><img src="pics/goal.jpg" class="img-fluid about-img"></div>
-      <div class="col-md-6 about-text">
-          Our main goal as a team is to enrich the educational experience of our community by providing local high school students with the opportunity to gain hands-on technical experience in engineering and software. As an independent student-run organization, unaffiliated with any school, we bridge between a variety of like-minded students from different backgrounds in a creative and intellectually stimulating setting. We are also the only team in the area that accepts every high school student who applies! 
-          </div>
-    </div>
-    <div class="row row-eq-height about-row">
-      <div class="col-md-6 about-text">Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games". These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow team members.</div>
-   
-      <div class="col-md-6"><img src="pics/first.jpg" class="img-fluid about-img"></div>
- </div>
-  </div>
-<hr>
-<div class="container standardText div-container">
-  <p class="div-title" id="robot_header"> Our Robot</p>
-    <div class="row row-eq-height about-row">
-      <div class="col-md-6 about-text">Robot Name : Baby Dino <br> Season : 2018-2019 <br> Design : Our robot for the 2019 season is a uni-arm system with 2 separate systems. Firstly we used a 3d printed grabber system to grab the hatches extremely securely. On the opposite side we have a over the bumper ball  intake that funnels the cargo effectively into a grabber system on the arm that allows us to set the arm at a correct angle to put the cargo in the lv1 rocket and the cargo ship. We also used a pneumatic 4 legged level 2 climber for the few extra points at the end of the match.
-</div>
-      <div class="col-md-6"><img src="pics/IMG_8187.gif" class="img-fluid about-img"></div>
-    </div>
-  </div>
-<hr>
-<div class="container standardText div-container">
-  <p class="div-title" style="margin-bottom: 40px;" id="sponsors_header"> Sponsors </p>
-  <div class="row row-eq-height">
-    <div class="col-md-4"> 
-      <img src="pics/logo1.svg" class="img-fluid">
-    </div>
-    <div class="col-md-4">
-      <img src="pics/logo2.png" class="img-fluid">
-    </div>
-    <div class="col-md-4"> 
-      <img src="pics/logo3.png" class="img-fluid">
-    </div>
- </div>
-  <div class="row row-eq-height">
-     <div class="col-md-4 tintwhite"> 
-      <img src="pics/logo4.png" class="img-fluid">
-    </div>
-    <div class="col-md-4"> 
-      <img src="pics/logo5.svg " class="img-fluid">
-    </div>
-    <div class="col-md-4"> 
-      <img src="pics/logo6.png" class="img-fluid">
-    </div>
- </div>
-</div>
-<hr>
-<div class="container standardText div-container">
-  <p class="div-title" style="margin-bottom: 40px;">Why Sponsor Us?</p>
-  <div class="row">
-    <div class="col-md-6 about-text">
-      By sponsoring us, you will directly fund an organization which provides a hands-on learning experience and support a cohort of hardworking students passionate about robotics. Your funding will allow the team to remain active for years to come, continuously inspiring dozens of students to pursue their passion for STEM. 
-    </div>
-    <div class="col-md-6">
-      <img src="pics/sponsor-us.jpg" class="img-fluid about-img">
-    </div>
-
-  </div>
-  <div class="row" style="margin-top: 25px;">
-   <div class="col-md-6">
-      <img src="pics/reason2.jpg" class="img-fluid about-img">
-
-    </div>
-    <div class="col-md-6 about-text">
-     	Each year, when a new game challenge is released by FIRST, our team designs, builds, assembles, and programs a brand-new robot from scratch which can then compete in the annual game. All funds granted to the team will be used to purchase materials, parts, tools, and more, all in support of this initiative. Your contribution will allow our team to grow, develop, and bring it to a whole new level of excellence. We are happy to recognize the contributions of our sponsors by placing their logos on our robot’s sponsor plant and our teams t-shirts in competitions. For more information about sponsorships, click <a href='https://team6036.github.io/sponsor.html'>here.</a> 
-    </div>
- 
-  </div>
-</div>
-<hr>
-<div class="container div-container" style="padding-bottom:80px">
-  <p class="div-title standardText" style="margin-bottom: 40px;" id="contact_header">Contact Us</p>
-          <p class="about-text standardText">The quickest way to reach us is by email. Shoot us an email at frc6036@gmail.com. Our lab is located at 947 Colonial Lane, Palo Alto CA, 94303.
-           <center><span><a href='https://www.instagram.com/frc6036' style='padding:2em;'><img src='https://www.instagram.com/favicon.ico' width=40px height=40px></a>
-           <a href='https://www.facebook.com/FRC6036/' style='padding:2em;'><img src='https://www.facebook.com/favicon.ico' width=40px height=40px></a>
-           <a href='https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw' style='padding:2em;'><img src='https://www.youtube.com/favicon.ico' width=40px height=40px></a>
-           <a href='https://twitter.com/frc6036' style='padding:2em;'><img src='https://www.twitter.com/favicon.ico' width=40px height=40px></a>
-           </span>
-           </center>
-        <div class="row" style="margin-left: 4px;">
-            <div class="col-md-6" id="map"></div>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto" id="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-</div>
-
-</body>
+    </nav>
+    <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  </body>
-  <style type="text/css">
-    .standardText{
-      font-family: 'Source Sans Pro', sans-serif;
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://team6036.github.io/pageBuilder.js"></script>
 
-    }
-    .navText{
-      font-size: 25px;
-      font-weight: 200;
-    }
-    .active-l{
-      font-weight: 300 !important;
-      color: rgba(255,255,255,1) !important;
-    }
-    .fill {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-    .fill img {
-      flex-shrink: 0;
-      max-width: 100%;
-      max-height: 100%;
-    }
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    } 
-    .carHeader{
-      color: white;
-      font-size: 60px;
-      text-align: center;
-    }
-    .carText{
-      color: white;
-      font-size: 30px;
-      font-weight: 300;
-      text-align: center;
-    }
-    .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-/*    .carousel-item{
-      object-fit: fill !important;
-    }*/
-    .carImage{}
-    #car1{
-      background-image: url('pics/carousel1.jpg');
-          /* Height and width fallback for older browsers. */
-    }
-    .about-img{
-      border-radius: 2%;
-    }
-    .about-text{
-      font-weight: 300;
-      font-size: 22px;
-    }
-    .div-title{
-      font-weight: 300; font-size: 60px; text-align: center; margin-bottom: 20px;
-    }
-    .div-container{
-      padding-top: 25px;
-    }
-    body{
-      background-color: #F9F9F9; 
-    }
-    .about-row{
-      margin-top: 25px;
-    }
-  </style>
-     <script>
-	var curloadedtag = "home";
-	var sf;
-	window.onscroll = function(){
-		if((window.innerHeight + window.scrollY) >= document.body.scrollHeight-100){
-		document.getElementById(curloadedtag).className = "nav-link navText";
-		document.getElementById("contact").className = "nav-link navText active-l";
-				curloadedtag="contact";
-				return;
-		
-		}
-		if((window.innerHeight + window.scrollY) >= document.getElementById("sponsors_header").offsetTop){
-				document.getElementById(curloadedtag).className = "nav-link navText";
-			document.getElementById("spons").className = "nav-link navText active-l";
-					curloadedtag="spons";
-					return;
-		}
-				
-				if(((window.innerHeight + window.scrollY) < (document.getElementById("about_header").offsetTop)+document.getElementById("about_header").offsetHeight + 20)){
-				document.getElementById(curloadedtag).className = "nav-link navText";
-			document.getElementById("home").className = "nav-link navText active-l";
-					curloadedtag="home";
-					return;
-		}
+</body>
 
-					if((window.innerHeight + window.scrollY) >= document.getElementById("robot_header").offsetTop){
-				document.getElementById(curloadedtag).className = "nav-link navText";
-			document.getElementById("robot").className = "nav-link navText active-l";
-					curloadedtag="robot";
-					return;
-					}
-
-if((window.innerHeight + window.scrollY) >= document.getElementById("about_header").offsetTop){
-				document.getElementById(curloadedtag).className = "nav-link navText";
-			document.getElementById("about").className = "nav-link navText active-l";
-					curloadedtag="about";
-					return;
-					}
-
-
-	}
-	function sctota(y){
-		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			clearInterval(sf);
-		}
-		if(((window.pageYOffset || document.documentElement.scrollTop)+document.getElementById("about_header").offsetHeight + 20) - y < -40){
-			window.scrollBy(0,10);
-		}else if(((window.pageYOffset || document.documentElement.scrollTop)+110)- y > 40){
-			window.scrollBy(0,-10);
-		}else{
-			clearInterval(sf);
-		
-		}
-	
-	}
-	function sta(){
-			clearInterval(sf);
-		sf = setInterval(function() {sctota(document.getElementById("about_header").offsetTop);},5);
-		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			window.scrollBy(0,-15);
-		}
-	}
-	
-	function sth(){
-				clearInterval(sf);
-			sf = setInterval(function() {sctota(105);},5);
-		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			window.scrollBy(0,-15);
-		}
-	}
-	
-	function sts(){
-				clearInterval(sf);
-				sf = setInterval(function() {sctota(document.getElementById("sponsors_header").offsetTop);},5);
-		if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			window.scrollBy(0,-15);
-		}
-	}
-	
-		function stro(){
-				clearInterval(sf);
-			sf = setInterval(function() {sctota(document.getElementById("robot_header").offsetTop);},5);
-			
-				if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			window.scrollBy(0,-15);
-		}
-	}
-		function stc(){
-				clearInterval(sf);
-			sf = setInterval(function() {sctota(document.getElementById("contact_header").offsetTop);},5);
-			
-				if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-			window.scrollBy(0,-15);
-		}
-	}
-      function initMap() {
-        var uluru = {lat: 37.440560, lng: -122.124352};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrr5gFE4Hg7zamqY1_oY-nFuBRS9DLXcs&callback=initMap"
-  type="text/javascript"></script>
 </html>
