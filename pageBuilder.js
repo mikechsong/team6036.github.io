@@ -28,4 +28,4 @@ function nav(inputURL) {
 
     return output;
 }
-document.getElementById("nav").innerHTML = nav("https://6036.github.io/nav.html");
+document.getElementById("nav").innerHTML = nav("https://team6036.github.io/nav.json");
