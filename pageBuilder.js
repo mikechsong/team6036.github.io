@@ -29,4 +29,4 @@ function nav(inputURL) {
 
     return output;
 }
-document.getElementById("nav").innerHTML = nav("https://6036.github.io/nav.json");
+document.getElementById("nav").innerHTML = nav("https://6036.github.io/nav.html");
