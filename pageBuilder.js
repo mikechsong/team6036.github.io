@@ -21,7 +21,6 @@ function nav(inputURL) {
     for (x in inputJSON) {
         console.log(inputJSON);
         console.log()
-        
         output += "<li class=\"nav-item\">\n";
         output += "<a class=\"nav-link\" href=\"" + inputJSON[x].link + "\">" + inputJSON[x].name + "</a>";
         output += "</li>";
