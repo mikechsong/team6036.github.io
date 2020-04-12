@@ -1,19 +1,23 @@
 
 // Navbar
 function nav(inputURL) {
-        $.getJSON(inputURL,function(data){
-            var output = "";
-            for (x in data) {
-                output += "<li class=\"nav-item\">\n";
-                output += "<a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name
-                console.log(window.location.href);
-                if("https://"+data[x].link===window.location.href){
-                    output+="<span class=\"sr-only\">(current)</span>"
-                }
-                output+="</a>";
-                output += "</li>";
+    $.getJSON(inputURL, function (data) {
+        var output = "";
+        for (x in data) {
+            output += "<li class=\"nav-item\">\n";
+            output += "<a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name
+            console.log(window.location.href);
+            if (window.location.href === "https://team6036.github.io/" && "https://" + data[x].link + "/" === window.location.href) {
+                // if this is root page, and it is root link, active
+                output += "<span class=\"sr-only\">(current)</span>"
+            } else if ("https://" + data[x].link === window.location.href) {
+                //if it is not root page, but right link, make active
+                output += "<span class=\"sr-only\">(current)</span>"
             }
-            document.getElementById("nav").innerHTML=output;
-        });
+            output += "</a>";
+            output += "</li>";
+        }
+        document.getElementById("nav").innerHTML = output;
+    });
 }
 nav("https://team6036.github.io/nav.json");

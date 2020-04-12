@@ -1,1 +1,10 @@
-[{"link":"https://team6036.github.io","name":"Home"},{"link":"https://google.com","name":"google"}]
+[
+    {
+        "link": "https://team6036.github.io",
+        "name": "Home"
+    },
+    {
+        "link": "https://google.com",
+        "name": "google"
+    }
+]
