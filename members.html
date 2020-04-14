@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<title>Team Members</title>
+<body>
+<style>
+.infobox {padding:20px;margin:5px;text-align:center;background-color:#343a40;border-radius:15px;}
+.infobox p {color:#fff;font-family:"Verdana", monospace;}
+.photo {width:200px;height:200px;background-size:cover;border-radius:20px;border:1px solid #222;}
+.member {width:250px;display:inline-block;min-height:400px;background-color:transparent;border-radius:30px;border:1px solid;border-color: #8e8e8e transparent;padding:30px;overflow:auto;}
+
+</style>
+<center>
+<table id='members'>
+
+</table>
+</center>
+</body>
+<script>
+var locdirectory = "source/teammembers/";
+var width = 0;
+margin = 0;
+var loaded = 0;
+members= [];
+
+window.onload = function(){loadMembers(10);};
+window.onresize = function(){loadMembers(10);};
+var q = "";
+function loadMembers(amount){
+width = window.innerWidth;
+document.getElementById("members").innerHTML ="";
+globalamount = amount;
+loaded = 0;
+margin = ((width-100)-(parseInt(width/250)*250))/parseInt((width/250));
+for(var i = 0; i < amount; i++){
+	readFile(i);
+}
+}
+
+function loadData(amount){
+q= "";
+var counter = 0;
+for(var i = 0; i<amount;i++){
+	if(counter%(parseInt(width/300))==0 && i!=0){
+		document.getElementById("members").innerHTML += q;
+		q = "<tr>";
+	}
+	
+	
+
+	if(members[i] == null){
+	}else{
+	
+	if(counter%(parseInt(width/300)) == parseInt(width/250)-1){
+		q +=insertData(members[i],i) + "</tr>";
+	}else{
+		q += insertData(members[i],i);
+	}	
+	counter++;	
+}	
+}
+document.getElementById("members").innerHTML += q;
+
+}
+
+function readFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", locdirectory+"member_"+file+".json");
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+		members[file] = JSON.parse(allText);       
+        	loaded+=1;
+		if(loaded==globalamount){
+			loadData(globalamount);
+		}
+	    }else{
+		members[file] = null;	
+        	loaded+=1;
+		if(loaded==globalamount){
+			loadData(globalamount);
+		}
+	}
+    }else{	
+	}};
+    rawFile.send(null);
+	
+}
+    window.onerror = function(message, url, lineNumber) {  
+         
+        return true; 
+    };
+function insertData(nix,userid){
+	switch(nix.team){
+	case "Software":
+			var tclass =  "S";
+			break;
+	case "Build":
+			var tclass =  "B";
+			break;
+	case "Mentor":
+			var tclass =  "M";
+			break;
+
+	default:
+			var tclass= "*";
+			break;
+	}
+	return "<td><div class='member'><center><div class='photo' style='background-image:url(\"source/teammembers/member_"+userid+".jpg\");'></div><div class='infobox'><p class='name'>"+nix.name+"</p><p class='bio'>"+nix.bio+"</p><p class='class'>CLASS : <b>"+tclass+"</b></p></div></center></div></td>";
+	
+}
+
+</script>
+</html>

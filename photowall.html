@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<title>Team 6036 Photowall</title>
+
+  <head> 
+    <!-- Required meta tags --> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ 
+    <!-- Bootstrap CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> 
+ 
+ 
+    <!-- Font --> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"> 
+	</head>
+
+  
+<style>
+*{margin:0px;padding:0px;}
+    .standardText{
+      font-family: 'Source Sans Pro', sans-serif;
+
+    }
+    .navText{
+      font-size: 25px;
+      font-weight: 200;
+    }
+    .active-l{
+      font-weight: 300 !important;
+      color: rgba(255,255,255,1) !important;
+    }
+    
+ .cen{width:190px;height:190px;overflow:visible;margin: 0px 10px;}
+.photopocket {-webkit-filter:grayscale(0.5) blur(1px);position:absolute;width:190px;z-index:1;height:190px;background-size:cover;}
+
+.hoverer:hover+.photopocket {animation-name:fadein;animation-timing-funtion:ease-out;animation-duration:0.1s;animation-fill-mode:both;} 
+#photowall {margin-top:100px;margin-left:0px;}
+.hoverer {z-index:13;margin:-130px;top:60px;width:190px;left:130px;height:190px;position:relative;}
+td {margin-top:20px;width:200px;height:210px;position:relative;}
+body{background-color:#fafafa;}
+
+@keyframes fadein{
+0% {-webkit-filter:blur(1px) grayscale(0.5);width:190px;height:190px;position:relative;}
+
+  20% {width:191px;height:191px;left:-1px;top:-1px;position:relative;}
+  40% {width:192px;height:192px;left:-2px;top:-2px;position:relative;}
+  60% {width:193px;height:193px;left:-3px;top:-3px;position:relative;}
+ 80% {width:194px;height:194px;left:-4px;top:-4px;position:relative;}
+ 
+	100% {-webkit-filter:saturate(1.5) blur(0px);width:200px;height:200px;left:-5px;top:-5px;position:relative;}
+}
+
+tr{}
+</style>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark standardText fixed-top" id="navv">
+	<a class="navbar-brand" href="photowall.html" style="font-size: 40px;">Team 6036</a>
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+            <a class="nav-link navText" href='index.html#home' id='home'>Home </a>
+          </li>
+	</ul> 
+	</div>
+	</nav>
+<center>
+<table id="photowall"></table>
+</center>
+<script>
+window.onload = loadwall;
+window.onresize = loadwall;
+var num = 128;
+photos =shuffleArray(num);
+function shuffleArray(size) {
+	var arr = [];
+	for(var i = 0;i<size;i++){
+		arr[i] = i;
+	}
+    for (var i = size - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+	return arr;
+}
+
+function loadwall(){
+
+var q = "";
+var width = window.innerWidth;
+
+var margin = ((width-600)-(parseInt(width/200)*200))/parseInt((width/200));
+
+document.getElementById("photowall").innerHTML = "<tr>"+("<th></th>".repeat(width/200))+"</tr>";
+for (i = 0; i < num; i++) {
+  	//var i = 101;
+		
+	if(i%(parseInt(width/200)) == 0 && i!=0){
+		q +="</tr>";
+		document.getElementById("photowall").innerHTML += q;
+		q = "<tr>";
+	}
+	
+	if(i%(parseInt(width/200)) == 0){
+	
+	q+= "<td style='padding-right:"+margin+"px'><div class='cen' ><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+photos[i]+".jpg\')\"></div></div></td>";
+	}else if(i%(parseInt(width/200)) == (parseInt(width/200)-2) || i%(parseInt(width/200)) == (parseInt(width/200)-1)){
+	
+	q+= "<td><div class='cen'><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+photos[i]+".jpg\')\"></div><div></td>";
+	}else{
+
+	q+= "<td style='padding-left:"+margin+"px'><div class='cen'><div class='hoverer'></div><div class='photopocket' style=\"background-image:url(\'source/output/copy_image_"+photos[i]+".jpg\')\"></div></div></td>";
+}
+}
+}
+     
+ 
+
+
+</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</body>
+</html>

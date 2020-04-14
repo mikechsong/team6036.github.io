@@ -1,0 +1,59 @@
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="media/CAD_Computer_IMG_2432.jpg" class="img-fluid about-img">CAD on the Computer</div>
+      <div class="col-md-3"><img src="media/Robot_CAD_IMG_6044.jpg" class="img-fluid about-img">CAD Render</div>
+      <div class="col-md-3"><img src="media/The_Pyramid_MG_9824.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="media/Robot_Not_CAD_IMG_6046.jpg" class="img-fluid about-img">Robot in Reality</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Ball_Inflate_IMG_2809.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Ball_Test_IMG_2819.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Cad_to_poly_IMG_2142.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Debug_pairing_IMG_2747.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Debugging_IMG_3386.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Frosted_Pyramid_IMG_8872.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Green_Mahir_IMG_9489.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Vision_Testing_Night_IMG_7725.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Grinding_Night_MG_5334.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Jeston_Prog_IMG_4078.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Jetson_Cardboard_Case_IMG_6923.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Kate_Robot_IMG_1903.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Kate_Robot_Pyramid_IMG_6637.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Light_Test_IMG_0587.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Mahir_Vision_Algo_IMG_9883.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Prog_6036_IMG_8715.jpg" class="img-fluid about-img">Inspection</div>
+    </div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Prog_at_night_IMG_6696.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Prog_Late_NIght_IMG_2792.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Prog_Mentor_IMG_8183.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Prog_Team_IMG_7626 2.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Programming_Mahir_IMG_9957.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Programming_Team_IMG_7033.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Programming_Team_Street_IMG_1906.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Programming_Vision_IMG_4136.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Pyramid_Ben_Kate_IMG_2728.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Pyramid_Construction_IMG_7781.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Pyramid_Parts_IMG_2132.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Pyramid_Proto_to_finished_IMG_2130.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Robot_IMG_3537.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Team_at_work_2018_IMG_2368.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Team_Work_IMG_2607.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Video_Testing_IMG_2013.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+<div class="row row-eq-height about-row">
+      <div class="col-md-3"><img src="Vision_Testing_IMG_2562.jpg" class="img-fluid about-img">Inspection</div>
+      <div class="col-md-3"><img src="Garage_Pan_IMG_2996.jpg" class="img-fluid about-img">Inspection</div>
+</div>
+
