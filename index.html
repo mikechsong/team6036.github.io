@@ -6,55 +6,181 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
+    <!-- Bootstrap CSS, first is their custom thing I pulled, second is darkly -->
+    <link rel="stylesheet" href="structure.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css">
 
-    <title>Hello, world!</title>
+    <title>Peninsula Robotics</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+<body class="lead">
+    <!-- If you want to modify the navbar items, change nav.json, not this -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Team 6036</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto" id="nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
+            <div class="btn-group" data-toggle="buttons">
+                <label>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="my-2">
+                        <!-- Not sure what the function of thses inputs are, but the hidden ones serve some checking purpose, and the submit one is necessary for the action -->
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="G2KY363UPSL28">
+                        <input type="submit" class="btn btn-warning" value="Donate" name="submit" alt="PayPal">
+                    </form>
+                </label>
+                <label>
+                    <form action="https://team6036.github.io/sponsor.html" method="post" target="_top" class="my-2">
+                        <input type="submit" class="btn btn-danger" value="Sponsor Us" name="submit">
+                    </form>
+                </label>
+            </div>
         </div>
     </nav>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <p class="div-title" id="about">
+            About Us
+        </p>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                Peninsula Robotics, FRC Team 6036, is a student-led community robotics team based in Palo Alto. Created
+                by a Palo Alto High School student in 2016 to answer the rising interest in STEM among local students,
+                Peninsula Robotics is active to this day and continues to serve its community by providing high school
+                students with hands-on learning experiences that allow them to apply theoretical knowledge in a creative
+                environment of like-minded students to produce functional, competitive robots.
 
+            </div>
+            <div class="col-md-6"><img src="site/index/about1.jpg" class="img-fluid"></div>
+        </div>
+        <div class="row bs-docs-section">
+            <div class="col-md-6"><img src="site/index/about2.jpg" class="img-fluid"></div>
+            <div class="col-md-6">
+                Our main goal as a team is to enrich the educational experience of our community by providing local high
+                school students with the opportunity to gain hands-on technical experience in engineering and software.
+                As an independent student-run organization, unaffiliated with any school, we bridge between a variety of
+                like-minded students from different backgrounds in a creative and intellectually stimulating setting. We
+                are also the only team in the area that accepts every high school student who applies!
+            </div>
+        </div>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">Combining the excitement of sport with the rigors of science and
+                technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student
+                participants call it “the hardest fun you’ll ever have.”. Every year, we attend several competitions
+                affiliated with FIRST Robotics. In these competitions, we compete with other teams to win at "games".
+                These "games" usually measure our robot's abilities to perform certain tasks in cohesion with our fellow
+                team members.</div>
+
+            <div class="col-md-6"><img src="site/index/about3.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="div-title" id="robot"> Our Robot</p>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">Robot Name : Baby Dino <br> Season : 2018-2019 <br> Design : Our robot for
+                the 2019 season is a uni-arm system with 2 separate systems. Firstly we used a 3d printed grabber system
+                to grab the hatches extremely securely. On the opposite side we have a over the bumper ball intake that
+                funnels the cargo effectively into a grabber system on the arm that allows us to set the arm at a
+                correct angle to put the cargo in the lv1 rocket and the cargo ship. We also used a pneumatic 4 legged
+                level 2 climber for the few extra points at the end of the match.
+            </div>
+            <div class="col-md-6"><img src="site/index/robot.gif" class="img-fluid"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="div-title" style="margin-bottom: 40px;" id="sponsors"> Sponsors </p>
+        <div class="row bs-docs-section">
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo1.svg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo2.png" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo3.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row bs-docs-section">
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo4.png" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo5.svg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="logos/sponsors/logo6.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="div-title" style="margin-bottom: 40px;">Why Sponsor Us?</p>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                By sponsoring us, you will directly fund an organization which provides a hands-on learning experience
+                and support a cohort of hardworking students passionate about robotics. Your funding will allow the team
+                to remain active for years to come, continuously inspiring dozens of students to pursue their passion
+                for STEM.
+            </div>
+            <div class="col-md-6">
+                <img src="site/index/reason1.jpg" class="img-fluid">
+            </div>
+
+        </div>
+        <div class="row bs-docs-section" style="margin-top: 25px;">
+            <div class="col-md-6">
+                <img src="site/index/reason2.jpg" class="img-fluid">
+
+            </div>
+            <div class="col-md-6">
+                Each year, when a new game challenge is released by FIRST, our team designs, builds, assembles, and
+                programs a brand-new robot from scratch which can then compete in the annual game. All funds granted to
+                the team will be used to purchase materials, parts, tools, and more, all in support of this initiative.
+                Your contribution will allow our team to grow, develop, and bring it to a whole new level of excellence.
+                We are happy to recognize the contributions of our sponsors by placing their logos on our robot’s
+                sponsor plant and our teams t-shirts in competitions. For more information about sponsorships, click <a
+                    href="https://team6036.github.io/sponsor.html">here.</a>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p class="div-title" id="contacts">Contact Us</p>
+        <p>
+            The quickest way to reach us is by email. Shoot us an email at
+            frc6036@gmail.com. Our lab is located at 947 Colonial Lane, Palo Alto CA, 94303.
+        </p>
+        <center><span><a href="https://www.instagram.com/frc6036" style="padding:2em;"><img
+                        src="https://www.instagram.com/favicon.ico" style="height: 32px;width: 32px;"></a>
+                <a href="https://www.facebook.com/FRC6036/" style="padding:2em;"><img
+                        src="logos/socials/facebook.png" style=" height: 32px;width: 32px;"></a>
+                <a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" style="padding:2em;"><img
+                        src="logos/socials/youtube.png" style=" height: 32px;width: 32px;"></a>
+                <a href="https://twitter.com/frc6036" style="padding:2em;"><img
+                        src="logos/socials/twitter.png"  style=" height: 32px;width: 32px;"></a>
+            </span>
+        </center>
+    </div>
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, and then our own js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://team6036.github.io/pageBuilder.js"></script>
+    <script src="http://127.0.0.1:5500/pageBuilder.js"></script>
 
 </body>
 

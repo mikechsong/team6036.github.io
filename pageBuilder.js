@@ -1,32 +1,32 @@
-function getText(url) {
-    // read text from URL location
-    var request = new XMLHttpRequest();
-    request.open('GET', url, true);
-    request.send(null);
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            var type = request.getResponseHeader('Content-Type');
-            if (type.indexOf("text") !== 1) {
-                return request.responseText;
-            }
-        }
-    }
-}
-
 // Navbar
 function nav(inputURL) {
-    var inputJSON = JSON.parse(getText(inputURL));
+    $.getJSON(inputURL, function (data) {
+        var output = "";
+        for (x in data) {
 
-    var output = "";
-    for (x in inputJSON) {
-        console.log(inputJSON);
-        console.log()
-        
-        output += "<li class=\"nav-item\">\n";
-        output += "<a class=\"nav-link\" href=\"" + inputJSON[x].link + "\">" + inputJSON[x].name + "</a>";
-        output += "</li>";
-    }
-
-    return output;
+            if (data[x].link === window.location.href || data[x].link + "/" === window.location.href) {
+                //if it is not root page, but right link, make active
+                console.log(data[x].link);
+                output += "<li class=\"nav-item active\"><a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name + "<span class=\"sr-only\">(current)</span>";
+            } else {
+                output += "<li class=\"nav-item \"><a class=\"nav-link\" href=\"" + data[x].link + "\">" + data[x].name
+            }
+            output += "</a></li>";
+        }
+        document.getElementById("nav").innerHTML += output;
+    });
 }
-document.getElementById("nav").innerHTML = nav("https://6036.github.io/nav.json");
+function body(inputURL) {
+    $.getJSON(inputURL, function (data) {
+        var output = "";
+        for (x in data) {
+            console.log(data[x].text)
+            output += "<div class=\"containter\">";
+            output += data[x].text
+            output += "</div>"
+        }
+        document.getElementById("body").innerHTML+=output;
+    });
+}
+nav("http://127.0.0.1:5500/nav.json");
+// body("http://127.0.0.1:5500/body.json") // not sure if necessary
