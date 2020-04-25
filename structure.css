@@ -1,8 +1,26 @@
-p.div-title{
+p.div-title {
     text-align: center;
     font-size: 250%;
 }
-body{
+
+body {
     font-family: sans-serif;
     text-size-adjust: 100%;
+    padding-top: 0;
 }
+
+.carousel-item {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.carousel-caption{
+    height:50vh;
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 150%;
+}
+

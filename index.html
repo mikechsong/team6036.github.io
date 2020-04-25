@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS, first is their custom thing I pulled, second is darkly -->
-    <link rel="stylesheet" href="structure.css">
+    <!-- Bootswatch CSS, first is their custom thing I pulled, second is cosmo -->
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="structure.css">
+
 
     <title>Peninsula Robotics</title>
 </head>
@@ -33,17 +34,71 @@
                         <!-- Not sure what the function of thses inputs are, but the hidden ones serve some checking purpose, and the submit one is necessary for the action -->
                         <input type="hidden" name="cmd" value="_s-xclick">
                         <input type="hidden" name="hosted_button_id" value="G2KY363UPSL28">
-                        <input type="submit" class="btn btn-warning" value="Donate" name="submit" alt="PayPal">
+                        <input type="submit" class="btn btn-success" value="Donate" name="submit" alt="PayPal">
                     </form>
                 </label>
                 <label>
-                    <form action="https://team6036.github.io/sponsor.html" method="post" target="_top" class="my-2">
-                        <input type="submit" class="btn btn-danger" value="Sponsor Us" name="submit">
+                    <form action="https://team6036.github.io/sponsor.html" class="my-2">
+                        <input type="submit" class="btn btn-primary" value="Sponsor Us" name="submit">
                     </form>
                 </label>
             </div>
         </div>
     </nav>
+
+    <div id="car" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#car" data-slide-to="0" class="active"></li>
+            <li data-target="#car" data-slide-to="1"></li>
+            <li data-target="#car" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(site/index/car3.jpg);">
+                <div class="carousel-caption">
+                    <h2>Peninsula Robotics - FRC Team 6036</h2>
+                    <p> Welcome to our website! </p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(site/index/car2.jpg);">
+                <div class="carousel-caption">
+                    <h2>Our Robot</h2>
+                    <p> Our robot, Baby Dino, can accumulate and deposit cargo and hatches. She can also climb to the
+                        second level of the platform.
+
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(site/index/car1.jpg);">
+                <div class="carousel-caption">
+                    <h2>Competitions</h2>
+                    <p>Each year we participate in two regional competitions, San Franciso Regional(SFR) and Sillicon
+                        Valley Regional(SVR). Last season, we attended the World Championship in Houston. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#car" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#car" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
     <div class="container">
         <p class="div-title" id="about">
             About Us
@@ -160,13 +215,13 @@
             frc6036@gmail.com. Our lab is located at 947 Colonial Lane, Palo Alto CA, 94303.
         </p>
         <center><span><a href="https://www.instagram.com/frc6036" style="padding:2em;"><img
-                        src="https://www.instagram.com/favicon.ico" style="height: 32px;width: 32px;"></a>
-                <a href="https://www.facebook.com/FRC6036/" style="padding:2em;"><img
-                        src="logos/socials/facebook.png" style=" height: 32px;width: 32px;"></a>
+                        src="/logos/socials/instagram.png" style="height: 32px;width: 32px;"></a>
+                <a href="https://www.facebook.com/FRC6036/" style="padding:2em;"><img src="logos/socials/facebook.png"
+                        style=" height: 32px;width: 32px;"></a>
                 <a href="https://www.youtube.com/channel/UC_FG-ib_Z0iVMZX7qVL0acw" style="padding:2em;"><img
                         src="logos/socials/youtube.png" style=" height: 32px;width: 32px;"></a>
-                <a href="https://twitter.com/frc6036" style="padding:2em;"><img
-                        src="logos/socials/twitter.png"  style=" height: 32px;width: 32px;"></a>
+                <a href="https://twitter.com/frc6036" style="padding:2em;"><img src="logos/socials/twitter.png"
+                        style=" height: 32px;width: 32px;"></a>
             </span>
         </center>
     </div>
