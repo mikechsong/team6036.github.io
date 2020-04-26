@@ -3,10 +3,15 @@ p.div-title {
     font-size: 250%;
 }
 
+.container{
+    padding-top: 3vh;
+}
+
 body {
     font-family: sans-serif;
     text-size-adjust: 100%;
-    padding-top: 0;
+    padding-top: 6.6221vh;
+
 }
 
 .carousel-item {
@@ -16,11 +21,14 @@ body {
 }
 
 .carousel-caption{
+    margin: auto;
+    position: initial;
+    padding-top: 40vh;
     height:50vh;
+    width: 60vw;
     font-size: 150%;
 }
 
 h2 {
     font-size: 150%;
 }
-

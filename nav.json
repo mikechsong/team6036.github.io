@@ -1,9 +1,5 @@
 [
     {
-        "link": "https://team6036.github.io#home",
-        "name": "Home"
-    },
-    {
         "link": "https://team6036.github.io#about",
         "name": "About"
     },
@@ -16,15 +12,11 @@
         "name": "Members"
     },
     {
-        "link": "https://team6036.github.io/media",
-        "name": "Media"
-    },
-    {
         "link": "https://team6036.github.io#sponsors",
         "name": "Sponsors"
     },
     {
-        "link": "https://team6036.github.io#contacts",
+        "link": "#contacts",
         "name": "Contact Us"
     }
 ]

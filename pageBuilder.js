@@ -16,10 +16,21 @@ function nav(inputURL) {
         document.getElementById("nav").innerHTML += output;
     });
 }
-nav("http://127.0.0.1:5500/nav.json");
 
+function contact(inputURL) {
+    $.get('site/contact.html', function(data) {
+        console.log(data);
+        document.getElementById("contacts").innerHTML +=data ;
+    });
+}
+
+
+
+nav("http://team6036.github.io/nav.json");
+contact("http://team6036.github.io/site/contact.html");
 
 var slideIndex = 1;
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
