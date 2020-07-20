@@ -9,7 +9,16 @@
     <!-- Bootswatch CSS, first is their custom thing I pulled, second is cosmo -->
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css">
-    <link rel="stylesheet" href="structure.css">
+    <link rel="stylesheet" href="site/structure.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, and then our own js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="site/pageBuilder.js"></script>
 
 
     <title>Peninsula Robotics</title>
@@ -17,33 +26,7 @@
 
 <body class="lead">
     <!-- If you want to modify the navbar items, change nav.json, not this -->
-    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Team 6036</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto" id="nav">
-            </ul>
-
-            <div class="btn-group" data-toggle="buttons">
-                <label>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="my-2">
-                        <!-- Not sure what the function of thses inputs are, but the hidden ones serve some checking purpose, and the submit one is necessary for the action -->
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="G2KY363UPSL28">
-                        <input type="submit" class="btn btn-success" value="Donate" name="submit" alt="PayPal">
-                    </form>
-                </label>
-                <label>
-                    <form action="https://team6036.github.io/sponsor.html" class="my-2">
-                        <input type="submit" class="btn btn-primary" value="Sponsor Us" name="submit">
-                    </form>
-                </label>
-            </div>
-        </div>
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
     </nav>
 
     <div id="car" class="carousel slide" data-ride="carousel">
@@ -154,24 +137,24 @@
         <p class="div-title" style="margin-bottom: 40px;" id="sponsors"> Sponsors </p>
         <div class="row bs-docs-section">
             <div class="col-md-4">
-                <img src="logos/sponsors/logo1.svg" class="img-fluid">
+                <img src="site/logos/sponsors/logo1.svg" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="logos/sponsors/logo2.png" class="img-fluid">
+                <img src="site/logos/sponsors/logo2.png" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="logos/sponsors/logo3.png" class="img-fluid">
+                <img src="site/logos/sponsors/logo3.png" class="img-fluid">
             </div>
         </div>
         <div class="row bs-docs-section">
             <div class="col-md-4">
-                <img src="logos/sponsors/logo4.png" class="img-fluid">
+                <img src="site/logos/sponsors/logo4.png" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="logos/sponsors/logo5.svg" class="img-fluid">
+                <img src="site/logos/sponsors/logo5.svg" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="logos/sponsors/logo6.png" class="img-fluid">
+                <img src="site/logos/sponsors/logo6.png" class="img-fluid">
             </div>
         </div>
     </div>
@@ -202,24 +185,14 @@
                 Your contribution will allow our team to grow, develop, and bring it to a whole new level of excellence.
                 We are happy to recognize the contributions of our sponsors by placing their logos on our robot’s
                 sponsor plant and our teams t-shirts in competitions. For more information about sponsorships, click <a
-                    href="https://team6036.github.io/sponsor.html">here.</a>
+                    href="sponsor.html">here.</a>
             </div>
 
         </div>
     </div>
     <hr>
-    <div class="container" id="contacts"></div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, and then our own js -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="http://team6036.github.io/pageBuilder.js"></script>
+    <div class="container" id="contacts">
+</div>
 
 </body>
 

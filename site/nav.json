@@ -1,0 +1,22 @@
+[
+    {
+        "link": "/#about",
+        "name": "About"
+    },
+    {
+        "link": "/#robot",
+        "name": "Our Robot"
+    },
+    {
+        "link": "/members.html",
+        "name": "Members"
+    },
+    {
+        "link": "/#sponsors",
+        "name": "Sponsors"
+    },
+    {
+        "link": "/#contacts",
+        "name": "Contact Us"
+    }
+]
