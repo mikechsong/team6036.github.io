@@ -25,7 +25,7 @@
 </head>
 
 <body class="lead">
-    <!-- If you want to modify the navbar items, change nav.json, not this -->
+    <!--! If you want to modify the navbar items, change nav.json, not this -->
     <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
     </nav>
 
@@ -51,7 +51,7 @@
         <br><br>
 
     </div>
-
+    <!--! Carousel -->
     <div id="car" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -120,7 +120,7 @@
                         meet tolerances, the robot
                         simply will not have the capability to perform in a competition. The majority of design's work
                         is done in cad software
-                        (solidworks or fusion 360), but their role also includes coming up with and proposing to the
+                        (Solidworks or Fusion 360), but their role also includes coming up with and proposing to the
                         team what sort of strategy
                         and mechanisms the year's robot will use.
                     </p>
@@ -128,7 +128,7 @@
                         Any new members wanting to learn how to cad will be taught to do so and given a
                         license for the software (or shown how to get one), given that their computer meets the
                         software's system requirements
-                        (not actually very high for fusion, but something to consider).
+                        (not actually very high for Fusion, but something to consider).
                     </p>
                 </div>
             </div>
@@ -137,14 +137,13 @@
                     <!-- Business -->
                     <h2>Business</h2>
                     <p>
-                        The Business team is the smallest, yet most important subteam. If you look at the sponsors list
-                        on this site, you will
-                        see the product of this subteam. They get money for the team. The yearly cost of entry to the
-                        FRC competition is about $6000,
-                        which for high schoolers, is not easy to get. On top of this, the cost of the parts in a robot
-                        can cost from $3000 to $5000,
-                        not counting the machinery, replacement parts, travel expenses, etc. Without this subteam, 6036
-                        would not be a sustainable team,
+                        The Business team is the smallest yet most important subteam. If you look at the sponsors list
+                        on this site, you will see the product of this subteam. Their job is to acquire money for the
+                        team through grants and sponsorships. The yearly cost of entry to the FRC competition is about
+                        $6000, which is a huge barrier for a high-school team. On top of this, the cost of the parts in
+                        a robot can cost from $3000 to $5000, not counting the machinery, replacement parts, travel
+                        expenses, etc. It is the Business subteam's job to fund the whole team throughout the year.
+                        Without this subteam and the work they do with sponsors, 6036 would not be a sustainable team,
                         and the community would lose an important source of education.
                     </p>
                 </div>
@@ -158,7 +157,15 @@
         <a class="carousel-control-next" href="#car" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </div>
+
 
     <br>
 
@@ -172,21 +179,53 @@
 
         <div class="row bs-docs-section">
             If you are interested in one or more of our subteams, or robotics as a whole, feel free to email us! We'll
-            be happy to answer any questions. If you're ready to apply, fill out this form, and we'll review your
-            application and respond with some next steps.
+            be happy to answer any questions. If you're ready to apply, we'll send you an application form, and we'll
+            review your application and respond with some next steps.
+        </div>
+
+
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                <p class="div-title">
+                    Software
+                </p>
+                Our tools include VS Code, Java, an frc-specific set of codebases that assist us with the more
+                nitty-gritty parts of coding, and git among several other less crucial ones. These all have their
+                learning curves, and every member is self taught in most or all of them. We know coding is hard, and we
+                understand that it might be intimidating for people new to the subject. We're here to help anyone
+                interested in learning to find success. Email the software captain at <a
+                    href="mailto:jlsatpa@gmail.com">jlsatpa@gmail.com</a> for any questions.
+
+            </div>
+            <div class="col-md-6">
+                <p class="div-title">
+                    Build
+                </p>
+                This is the subteam with the most work, and least material to learn. Outside of the machines and things
+                like hammers, mallets, and saws, members of this subteam spend most of their time putting things
+                together. That said, there is skill built in assembly and understanding of the complex and interesting
+                mechanisms that the design team comes up with, as well as working around their occasional flaws. People
+                from all three other subteams tend to also play a role in this one, as it is composed of almost everyone
+                in 6036.
+            </div>
+        </div>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                <p class="div-title">
+                    Design
+                </p>
+
+
+            </div>
+            <div class="col-md-6">
+                <p class="div-title">
+                    Business
+                </p>
+
+            </div>
         </div>
 
     </div>
-        
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-
     <div class="container" id="contactsection">
     </div>
 
