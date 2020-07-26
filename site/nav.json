@@ -16,11 +16,7 @@
         "name": "Contact Us"
     },
     {
-        "link": "/members.html",
-        "name": "Members"
-    },
-    {
-        "link": "/new_members.html",
+        "link": "/join_us.html",
         "name": "Join Us"
     }
 ]
