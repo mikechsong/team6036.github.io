@@ -26,7 +26,7 @@ function nav() {
 
 function contact() {
     $.get('site/contact.html', function (data) {
-        document.getElementById("contacts").innerHTML += data;
+        document.getElementById("contactsection").innerHTML += data;
     });
 }
 

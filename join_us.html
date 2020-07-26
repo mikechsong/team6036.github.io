@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootswatch CSS, first is their custom thing I pulled, second is cosmo -->
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="site/structure.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, and then our own js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="site/pageBuilder.js"></script>
+
+
+    <title>Peninsula Robotics</title>
+</head>
+
+<body class="lead">
+    <!--! If you want to modify the navbar items, change nav.json, not this -->
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
+    </nav>
+
+    <div class="container">
+
+        <br>
+
+        <p class="div-title">
+            Join Us
+        </p>
+
+        <div class="row bs-docs-section">
+            As a community organization, Team 6036 prides itself in being extremely open: we take anyone who is
+            interested in contributing to the technical education of themselves or others in the community, and no time
+            commitment is required. This also means that no previous knowledge of anything robotics or management
+            related is necessary to join -- you just have to be in high school. That said, few people can jump into
+            robotics and learn every aspect of the field without serious time and effort. This is why we have subteams:
+            specialized groups of members that work on a specific part of the necessary components of the robot. As a
+            team, we are vaguely divided into Software, Build, Design, and Business. Note that you're not forced to be
+            in a single one or any of these subteams to contribute, but they are organized and led separately, as their
+            tasks are vastly different.
+        </div>
+        <br><br>
+
+    </div>
+    <!--! Carousel -->
+    <div id="car" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#car" data-slide-to="0" class="active"></li>
+            <li data-target="#car" data-slide-to="1"></li>
+            <li data-target="#car" data-slide-to="2"></li>
+            <li data-target="#car" data-slide-to="3"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(site/join/car1.jpg);">
+                <!-- Software -->
+                <div class="carousel-caption">
+                    <h2>Software</h2>
+                    <p>
+                        The part of the team most detached from the physical robot, the Software subteam's
+                        responsibilities
+                        include maintaining the website, active codebases (sets of code that the team may reuse), and
+                        demo robot's
+                        functionality (for sponsors and friendly matches), on top of making sure that the robot
+                        designed, funded, and
+                        assembled by the rest of the team can actually be used.
+                    </p>
+                    <p>
+                        While learning to coding and computer science are a
+                        field of their own, they are essential to robotics. New members with no knowledge are welcome to
+                        join this
+                        subteam, and will be led through the basics on how the basic tools we use (git, java, wpilib, VS
+                        Code) work.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(site/join/car2.jpg);">
+                <div class="carousel-caption">
+                    <!-- Build -->
+                    <h2> Build </h2>
+                    <p>
+                        The Build subteam is in charge of the physical construction of the robot. They use various tools
+                        like mills, drill presses, lathes, saws, 3D printers, and more to bring the robot design to
+                        fruition. Working very closely with the Design subteam, the Build subteam creates and tests
+                        prototypes of mechanisms, machines parts, and assembles the final robot. After assembly, we add
+                        the wires and electronics necessary to run the robot, working with the Software subteam during
+                        testing and making mechanical adjustments as needed.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(site/join/car3.jpg);">
+                <div class="carousel-caption">
+                    <!-- Design -->
+                    <h2>Design</h2>
+                    <p>
+                        The Design subteam is in charge of the physical layout of the robot. They work on designing the
+                        robot using 3D CAD software, putting together ideas and concepts for mechanisms from teamwide
+                        design discussions. They work extensively with the machinists on the Build subteam to ensure
+                        that the parts can be manufactured, and sometimes help or oversee the machining.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(site/join/car4.jpg);">
+                <div class="carousel-caption">
+                    <!-- Business -->
+                    <h2>Business</h2>
+                    <p>
+                        The Business subteam is small but very important. They acquire money for the team through grants
+                        and sponsorships. The yearly cost of entry to the FRC competition is about $6000, which is a
+                        huge barrier to a high-school team. On top of this, the cost of the parts in a robot can cost
+                        from $2000 to $5000, not counting the machinery, replacement parts, travel, and other logistical
+                        expenses. Without this subteam and the work they do with our sponsors, 6036 would not be
+                        sustainable. Another crucial part of the Business subteam is reaching out, collaborating with
+                        others to help our local community. For example, we recently got into contact with the nonprofit
+                        Maker Nexus to help 3D print face shields for local hospitals during the pandemic.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#car" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#car" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="container">
+
+        <br>
+
+        <p class="div-title">
+            Interested?
+        </p>
+
+        <div class="row bs-docs-section">
+            If you are interested in one or more of our subteams, or robotics as a whole, feel free to email us! We'll
+            be happy to answer any questions. If you're ready to apply, we'll send you an application form, and we'll
+            review your application and respond with some next steps.
+        </div>
+
+
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                <p class="div-title">
+                    Software
+                </p>
+                Our tools include VS Code, Java, an frc-specific set of codebases that assist us with the more
+                nitty-gritty parts of coding, and git among several other less crucial ones. These all have their
+                learning curves, and every member is self taught in most or all of them. We know coding is hard, and we
+                understand that it might be intimidating for people new to the subject. We're here to help anyone
+                interested in learning to find success. Email the software captain at <a
+                    href="mailto:jlsatpa@gmail.com">jlsatpa@gmail.com</a> for any questions.
+
+            </div>
+            <div class="col-md-6">
+                <p class="div-title">
+                    Build
+                </p>
+                As it is quite a lot of work, it is the largest subteam and some members choose to focus on certain
+                aspects of build, such as operating the machine tools or working with electronics. In addition, members
+                who usually work with other subteams often come to help get the robot finished on time.
+            </div>
+        </div>
+        <div class="row bs-docs-section">
+            <div class="col-md-6">
+                <p class="div-title">
+                    Design
+                </p>
+                Design is sometimes hectic: we must consider cost, machinability, ease of assembly, and effectiveness,
+                all within the first few weeks of game release. Understanding the best practices and learning the design
+                software (Fusion360 and Solidworks) can be daunting, but we would be happy to provide the software
+                licenses needed and get new members started.
+
+            </div>
+            <div class="col-md-6">
+                <p class="div-title">
+                    Business
+                </p>
+                The work of the Business subteam is often done throughout the year, not necessarily at the same time as
+                the construction of the robot in January through March. As such, the members of this subteam often also
+                participate heavily in the other subteams, when the robot is being brainstormed, designed, built, wired,
+                programmed, driven, and troubleshooted.
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container" id="contactsection">
+    </div>
+
+
+</body>
