@@ -30,7 +30,9 @@ function contact() {
     });
 }
 
-
+$(document).ready(function() {   //same as: $(function() { 
+     nav();
+});
 
 nav();
 contact();
